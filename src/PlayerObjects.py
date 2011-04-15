@@ -6,7 +6,16 @@ class Player(object):
         self.hand = []
         
     def draw_from(self, deck):
-        self.hand.insert(0, deck.draw())
+        try:
+            self.hand.insert(0, deck.draw())
+        except:
+            pass
+
+    def has_card_index(self, value):
+        for i in range(len(self.hand)):
+            if self.hand[i].value == value:
+                return i
+        return -1
 
     def play_card(self):
         return self.hand.pop()

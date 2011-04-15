@@ -1,0 +1,37 @@
+import unittest
+from GoFishPlayerObjects import GoFishPlayer
+from CardObjects import Card
+
+class GoFishPlayerTests(unittest.TestCase):
+
+    def setUp(self):
+        self.player = GoFishPlayer()
+
+    def test_initial_state(self):
+        self.assertEqual(len(self.player.hand), 0) # starts with no cards
+        self.assertEqual(self.player.score, 0) # starts with no points
+
+    def test_earned_no_point(self):
+        self.player.hand = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts")]
+        self.assertEqual(self.player.check_point(), -1)
+
+    def test_earned_point(self):
+        self.player.hand = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts"), Card(13, "Spades")]
+        self.assertEqual(self.player.check_point(), 13)
+
+    def test_remove_all(self):
+        self.player.hand = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts"), Card(13, "Spades")]
+        self.assertEqual(len(self.player.hand), 4)
+        self.player.remove_all(13)
+        self.assertEqual(len(self.player.hand), 0)
+
+    def update_score(self):
+        self.player.hand = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts"), Card(13, "Spades")]
+        self.assertEqual(self.player.score, 0)
+        self.assertEqual(len(self.player.hand), 4)
+        self.player.update_score(self)
+        self.assertEqual(self.player.score, 1)
+        self.assertEqual(len(self.player.hand), 0)
+
+if __name__ == '__main__':
+    unittest.main()

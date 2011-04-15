@@ -12,4 +12,7 @@ class GoFishTests(unittest.TestCase):
         self.assertEqual(len(self.table.deck.cards), 38) # 38 cards left in deck after dealing
         self.assertEqual(len(self.table.players[0].hand), 7) # each player has seven cards
         self.assertEqual(len(self.table.players[1].hand), 7)
+        
 
+if __name__ == '__main__':
+    unittest.main()
