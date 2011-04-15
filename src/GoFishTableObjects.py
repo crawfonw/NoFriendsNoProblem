@@ -10,16 +10,16 @@ class GoFishTable(Table):
         self.deck.shuffle()
         for i in range(player_count):
             self.players.append(GoFishPlayer())
+        self.deal(7)
 
     def get_winner(self):
         max_score_player = -1
         for i in range(len(self.players)):
-            if player.score > max_score:
+            if max_score_player == -1 or self.players[i].score > self.players[max_score_player].score:
                 max_score_player = i
         return max_score_player
 
     def play_game(self):
-        self.deal(7)
         current_player = 0
         while not self.winner():
             print("Player {}:".format(current_player))
