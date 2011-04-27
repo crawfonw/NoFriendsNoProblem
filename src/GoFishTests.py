@@ -13,3 +13,24 @@ class GoFishTests(unittest.TestCase):
         self.assertEqual(len(self.table.players[0].hand), 7) # each player has seven cards
         self.assertEqual(len(self.table.players[1].hand), 7)
 
+    def test_get_winner(self):
+        self.table.players[1].score = 1
+        self.assertEqual(self.table.get_winner(), 1)
+
+    def test_get_winner_with_cards(self):
+        self.table.players[0].hand = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts")]
+        self.table.players[0].score = 2
+        self.table.players[1].score = 1
+        self.assertEqual(self.table.get_winner(), 0)
+
+    def test_no_winner(self):
+        self.table.players[0].hand = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts")]
+        self.table.players[1].hand = [Card(13, "Spades")]
+        self.assertEqual(self.table.winner(), False)
+
+    def test_winner(self):
+        self.table.players[1].hand = []
+        self.assertEqual(self.table.winner(), True)
+
+if __name__ == '__main__':
+    unittest.main()
