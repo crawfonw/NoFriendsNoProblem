@@ -1,0 +1,69 @@
+=== File: src/pygamehelper.py ===
+Module src/pygamehelper.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/pygamehelper.py
+--------------------------------------------
+
+          5    maxBlockDepth
+         27    numBlocks
+       2500    numCharacters
+          1    numClasses
+          4    numComments
+          1    numCommentsInline
+         12    numFunctions
+         73    numKeywords
+         84    numLines
+        830    numTokens
+
+          4.76 %Comments
+          1.19 %CommentsInline
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- PygameHelper.__init__
+- PygameHelper.draw
+- PygameHelper.handleEvents
+- PygameHelper.keyDown
+- PygameHelper.keyUp
+- PygameHelper.mainLoop
+- PygameHelper.mouseMotion
+- PygameHelper.mouseUp
+- PygameHelper.update
+- PygameHelper.waitForKey
+- drawGraph
+- frange
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- PygameHelper
+
+
+McCabe Complexity Metric for file src/pygamehelper.py
+------------------------------------------------------
+
+          1    PygameHelper.__init__
+          1    PygameHelper.draw
+          8    PygameHelper.handleEvents
+          1    PygameHelper.keyDown
+          1    PygameHelper.keyUp
+          2    PygameHelper.mainLoop
+          1    PygameHelper.mouseMotion
+          1    PygameHelper.mouseUp
+          1    PygameHelper.update
+          4    PygameHelper.waitForKey
+          1    __main__
+          2    drawGraph
+          2    frange
+
+
+COCOMO 2's SLOC Metric for src/pygamehelper.py
+-----------------------------------------------
+
+         67    src/pygamehelper.py
+
+
+*** Processed 1 module in run ***

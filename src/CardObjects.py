@@ -45,8 +45,3 @@ class Card(object):
             return 1
         else:
             return -1
-
-    def __eq__(self, other):
-        if self.value == other.value:
-            return 1
-        return -1

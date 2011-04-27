@@ -1,0 +1,27 @@
+=== File: src/TestSuite.py ===
+Module src/TestSuite.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/TestSuite.py
+-----------------------------------------
+
+          1    numBlocks
+        371    numCharacters
+         11    numKeywords
+         14    numLines
+        116    numTokens
+
+
+McCabe Complexity Metric for file src/TestSuite.py
+---------------------------------------------------
+
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/TestSuite.py
+--------------------------------------------
+
+         10    src/TestSuite.py
+
+
+*** Processed 1 module in run ***
