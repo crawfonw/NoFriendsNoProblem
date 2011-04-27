@@ -11,11 +11,12 @@ class TestTable(unittest.TestCase):
     def test_deal(self):
         self.table.deck.cards = [Card(13, "Hearts"), Card(13, "Spades"), Card(13, "Diamonds"), Card(13, "Clubs")]
         self.table.deal(2)
-        for card1, card2 in map(None, self.table.players[0].hand, [Card(13, "Spades"), Card(13, "Clubs")]):
-            self.assertTrue(card1.same_as(card2))
 
-        for card1, card2 in map(None, self.table.players[1].hand, [Card(13, "Hearts"), Card(13, "Diamonds")]):
-            self.assertTrue(card1.same_as(card2))
+        for i in range(2):
+            self.assertTrue(self.table.players[0].hand[i].same_as([Card(13, "Spades"), Card(13, "Clubs")][i]))
+
+        for i in range(2):
+            self.assertTrue(self.table.players[1].hand[i].same_as([Card(13, "Hearts"), Card(13, "Diamonds")][i]))
     
     def test_deal_without_enough_cards(self):
         self.table.deck.cards = [Card(13, "Hearts"), Card(13, "Spades"), Card(13, "Diamonds"), Card(13, "Clubs")]

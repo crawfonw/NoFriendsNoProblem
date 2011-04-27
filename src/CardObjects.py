@@ -40,10 +40,13 @@ class Card(object):
     def same_as(self, other):
         return self.value == other.value and self.suit == other.suit
 
-    def __cmp__(self, other):
-        if self.value == other.value:
-            return 0
-        if self.value > other.value:
+    def __lt__(self, other):
+        if self.value < other.value:
             return 1
         else:
             return -1
+
+    def __eq__(self, other):
+        if self.value == other.value:
+            return 1
+        return -1
