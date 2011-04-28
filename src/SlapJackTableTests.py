@@ -38,7 +38,7 @@ class TestSlapJackTable(unittest.TestCase):
         self.table.players[0].pile.cards = self.table.players[0].pile.cards[1:]
         self.assertFalse(self.table.winner())
 
-    def test_no_action_on_incorrect_slap(self):
+    def test_no_cards_added_to_player_pile_on_incorrect_slap(self):
         self.table.players[0].pile.cards = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts")]
         self.table.players[1].pile.cards = [[Card(1, "Diamonds"), Card(1, "Clubs"), Card(1, "Hearts")]]
         self.table.pile.add(self.table.players[0].flip())
@@ -48,5 +48,23 @@ class TestSlapJackTable(unittest.TestCase):
         self.assertEqual(len(self.table.pile), 1)
         self.assertTrue(self.table.pile.peek().same_as(Card(13, "Hearts")))
         
+    def test_cards_added_to_player_pile_on_incorrect_slap(self):
+        self.table.players[0].pile.cards = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts")]
+        self.table.players[1].pile.cards = [[Card(11, "Spades")]
+        self.table.pile.cards = [Card(2, "Clubs"), Card(2, "Hearts")]
+        self.table.pile.add(self.table.players[1].flip())
+        self.table.players[1].slap(self.table.pile.peek())
+        self.assertEqual(len(self.table.players[0].pile.cards), 3)
+        self.assertEqual(len(self.table.players[1].pile.cards), 3)
+        self.assertEqual(len(self.table.pile), 0)
+        self.assertTrue(self.table.pile[0].same_as(Card(2, "Clubs")))
+        self.assertTrue(self.table.pile[1].same_as(Card(2, "Hearts")))
+        self.assertTrue(self.table.pile[2].same_as(Card(11, "Spades")))
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+
 
 
