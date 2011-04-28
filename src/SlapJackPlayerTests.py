@@ -17,7 +17,7 @@ class TestSlapJackPlayer(unittest.TestCase):
         self.assertTrue(ret.same_as(Card(13, "Hearts")))
 
     def test_slap_correct(self):
-        self.assertTrue(self.player.slap(Card(11, "Hearts"))
+        self.assertTrue(self.player.slap(Card(11, "Hearts")))
 
     def test_slap_incorrect(self):
-        self.assertFalse(self.player.slap(Card(7, "Diamonds"))
+        self.assertFalse(self.player.slap(Card(7, "Diamonds")))

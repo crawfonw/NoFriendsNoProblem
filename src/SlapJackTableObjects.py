@@ -1,13 +1,12 @@
 from TableObjects import Table
 from SlapJackPlayerObjects import SlapJackPlayer
-from DeckObjects import Deck
+from DiscardPileObjects import DiscardPile
 
 class SlapJackTable(Table):
    
     def __init__(self, player_count=2):
         self.players = []
-        self.deck = Deck()
-        self.pile = []
+        self.pile = DiscardPile()
 
     def get_winner(self):
         pass

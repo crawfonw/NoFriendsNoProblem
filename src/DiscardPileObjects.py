@@ -8,3 +8,7 @@ class DiscardPile(Deck):
 
     def add(self, card):
         self.cards.append(card)
+
+    def peek(self):
+        if len(self.cards) > 0:
+            return self.cards[-1]

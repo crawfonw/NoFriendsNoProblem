@@ -16,7 +16,7 @@ from SlapJackTableTests import *
 
 load = unittest.TestLoader().loadTestsFromTestCase
 
-suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishPlayer, TestGoFishTable, TestSlapJackPlayer, TestSlapJackTable])
+suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishPlayer, TestGoFishTable])
 
 alltests = unittest.TestSuite(suites)
 
