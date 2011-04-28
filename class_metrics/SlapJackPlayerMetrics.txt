@@ -1,0 +1,43 @@
+=== File: src/SlapJackPlayer.py ===
+Module src/SlapJackPlayer.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/SlapJackPlayer.py
+----------------------------------------------
+
+          2    maxBlockDepth
+          3    numBlocks
+        135    numCharacters
+          1    numClasses
+          1    numFunctions
+          8    numKeywords
+          7    numLines
+         45    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- SlapJackPlayer.__init__
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- SlapJackPlayer
+
+
+McCabe Complexity Metric for file src/SlapJackPlayer.py
+--------------------------------------------------------
+
+          1    SlapJackPlayer.__init__
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/SlapJackPlayer.py
+-------------------------------------------------
+
+          5    src/SlapJackPlayer.py
+
+
+*** Processed 1 module in run ***

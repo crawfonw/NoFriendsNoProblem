@@ -2,7 +2,7 @@ import unittest
 from GoFishPlayerObjects import GoFishPlayer
 from CardObjects import Card
 
-class GoFishPlayerTests(unittest.TestCase):
+class TestGoFishPlayer(unittest.TestCase):
 
     def setUp(self):
         self.player = GoFishPlayer()

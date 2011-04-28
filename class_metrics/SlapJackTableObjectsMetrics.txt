@@ -1,0 +1,49 @@
+=== File: src/SlapJackTableObjects.py ===
+Module src/SlapJackTableObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/SlapJackTableObjects.py
+----------------------------------------------------
+
+          2    maxBlockDepth
+          6    numBlocks
+        310    numCharacters
+          1    numClasses
+          4    numFunctions
+         19    numKeywords
+         17    numLines
+        106    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- SlapJackTable.__init__
+- SlapJackTable.get_winner
+- SlapJackTable.play_game
+- SlapJackTable.winner
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- SlapJackTable
+
+
+McCabe Complexity Metric for file src/SlapJackTableObjects.py
+--------------------------------------------------------------
+
+          1    SlapJackTable.__init__
+          1    SlapJackTable.get_winner
+          1    SlapJackTable.play_game
+          1    SlapJackTable.winner
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/SlapJackTableObjects.py
+-------------------------------------------------------
+
+         12    src/SlapJackTableObjects.py
+
+
+*** Processed 1 module in run ***
