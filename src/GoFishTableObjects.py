@@ -1,5 +1,6 @@
 from TableObjects import Table
-from GoFishPlayerObjects import GoFishPlayer
+from GoFishHumanPlayerObjects import GoFishHumanPlayer
+from GoFishAIPlayerObjects import GoFishAIPlayer
 from DeckObjects import Deck
 
 class GoFishTable(Table):
@@ -8,8 +9,9 @@ class GoFishTable(Table):
         self.players = []
         self.deck = Deck()
         self.deck.shuffle()
-        for i in range(player_count):
-            self.players.append(GoFishPlayer())
+        self.players.append(GoFishHumanPlayer())
+        for i in range(player_count - 1):
+            self.players.append(GoFishAIPlayer())
         self.deal(7)
 
     def get_winner(self):
