@@ -52,8 +52,8 @@ class TestTwentyFour(unittest.TestCase):
     def test_elimination_winning_condition(self):
         self.table.players[0].hand.extend(self.table.players[1].hand) # player 0 absorbs player 1's hand
         self.table.players[1].hand = []
-        self.assertEqual(self.table.winner(), self.table.players[0]) # assert that player 0 has won
+        self.assertEqual(self.table.winner(), 0) # assert that player 0 has won
 
     def test_point_winning_condition(self):
         self.table.players[0].points = 15 # player 0 accumulates 15 points
-        self.assertEqual(self.table.winner(), self.table.players[0]) # assert that player 0 has won
+        self.assertEqual(self.table.winner(), 0) # assert that player 0 has won
