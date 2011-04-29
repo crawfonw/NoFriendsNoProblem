@@ -8,17 +8,10 @@ class GoFishTable(Table):
     def __init__(self, player_count=2):
         self.players = []
         self.deck = Deck()
-<<<<<<< HEAD
         self.deck.shuffle()
         self.players.append(GoFishHumanPlayer())
         for i in range(player_count - 1):
             self.players.append(GoFishAIPlayer())
-=======
-        for i in range(player_count):
-            self.players.append(GoFishPlayer())
-
-        self.deck.shuffle()
->>>>>>> 1d4f7e223504fcf507b5930c85bf019ac183089e
         self.deal(7)
 
     def get_winner(self):

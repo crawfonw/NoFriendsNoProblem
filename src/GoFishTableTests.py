@@ -4,11 +4,8 @@ from PlayerObjects import Player
 from DeckObjects import Deck
 from CardObjects import Card
 
-<<<<<<< HEAD
-class TestGoFish(unittest.TestCase):
-=======
 class TestGoFishTable(unittest.TestCase):
->>>>>>> 1d4f7e223504fcf507b5930c85bf019ac183089e
+    
     def setUp(self):
         self.table = GoFishTable(2) # assume two players
 
