@@ -9,14 +9,14 @@ from TableTests import *
 from GoFishPlayerTests import *
 from GoFishTableTests import *
 
-from SlapJackPlayerTests import *
-from SlapJackTableTests import *
+#from SlapJackPlayerTests import *
+#from SlapJackTableTests import *
 
-#from TwentyFourTests import *
+from TwentyFourTests import *
 
 load = unittest.TestLoader().loadTestsFromTestCase
 
-suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishPlayer, TestGoFishTable])
+suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishPlayer, TestGoFishTable, TestTwentyFour])
 
 alltests = unittest.TestSuite(suites)
 

@@ -2,6 +2,7 @@ from CardObjects import Card
 from PlayerObjects import Player
 from DeckObjects import Deck
 from DiscardPileObjects import DiscardPile
+from TrickObjects import Trick
 
 class Table(object):
     def __init__(self, player_count=2):
@@ -9,7 +10,8 @@ class Table(object):
         self.deck = Deck()
         self.deck.shuffle()
         self.discard = DiscardPile()
-        self.trick = []
+        self.trick = Trick()
+        self.trick.cards = []
 
         for i in range(player_count):
             self.players.append(Player())
@@ -24,17 +26,17 @@ class Table(object):
 
     def play_game(self):
         while not self.winner():
-            self.trick = []
+            self.trick.cards = []
             self.deal(1)
             for player in self.players:
-                self.trick.append(player.play_card())
+                self.trick.cards.append(player.play_card())
         return self.winner()
 
     def winner(self):
-        if len(self.trick) > 0:
-            if self.trick[0] > self.trick[1]:
+        if len(self.trick.cards) > 0:
+            if self.trick.cards[0] > self.trick.cards[1]:
                 return self.players[0]
-            elif self.trick[0] < self.trick[1]:
+            elif self.trick.cards[0] < self.trick.cards[1]:
                 return self.players[1]
-                
+
 
