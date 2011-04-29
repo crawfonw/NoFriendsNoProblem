@@ -20,7 +20,7 @@ from GoFishTableTests import *
 
 load = unittest.TestLoader().loadTestsFromTestCase
 
-suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishTable, TestGoFishPlayer, TestGoFishHumanPlayer, TestGoFishAIPlayer])
+suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishTable, TestGoFishPlayer, TestGoFishHumanPlayer, TestGoFishAIPlayer, TestTwentyFour])
 
 alltests = unittest.TestSuite(suites)
 
