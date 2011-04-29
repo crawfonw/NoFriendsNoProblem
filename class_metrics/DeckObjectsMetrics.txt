@@ -1,0 +1,47 @@
+=== File: src/DeckObjects.py ===
+Module src/DeckObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/DeckObjects.py
+-------------------------------------------
+
+          4    maxBlockDepth
+          8    numBlocks
+        484    numCharacters
+          1    numClasses
+          3    numFunctions
+         21    numKeywords
+         19    numLines
+        188    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- Deck.__init__
+- Deck.draw
+- Deck.shuffle
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- Deck
+
+
+McCabe Complexity Metric for file src/DeckObjects.py
+-----------------------------------------------------
+
+          4    Deck.__init__
+          1    Deck.draw
+          1    Deck.shuffle
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/DeckObjects.py
+----------------------------------------------
+
+         15    src/DeckObjects.py
+
+
+*** Processed 1 module in run ***

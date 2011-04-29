@@ -1,0 +1,51 @@
+=== File: src/PlayerObjects.py ===
+Module src/PlayerObjects.py is missing a module doc string. Detected at line 1
+
+In file src/PlayerObjects.py, function Player.has_card_index has 1 extra exit at line 17
+
+Basic Metrics for module src/PlayerObjects.py
+---------------------------------------------
+
+          4    maxBlockDepth
+         10    numBlocks
+        457    numCharacters
+          1    numClasses
+          4    numFunctions
+         25    numKeywords
+         21    numLines
+          1    numMultipleExitFcns
+        182    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- Player.__init__
+- Player.draw_from
+- Player.has_card_index
+- Player.play_card
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- Player
+
+
+McCabe Complexity Metric for file src/PlayerObjects.py
+-------------------------------------------------------
+
+          1    Player.__init__
+          1    Player.draw_from
+          3    Player.has_card_index
+          1    Player.play_card
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/PlayerObjects.py
+------------------------------------------------
+
+         16    src/PlayerObjects.py
+
+
+*** Processed 1 module in run ***

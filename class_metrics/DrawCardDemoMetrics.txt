@@ -1,0 +1,75 @@
+=== File: src/DrawCardDemo.py ===
+Module src/DrawCardDemo.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/DrawCardDemo.py
+--------------------------------------------
+
+          4    maxBlockDepth
+         35    numBlocks
+       5569    numCharacters
+          1    numClasses
+          8    numComments
+         16    numFunctions
+        205    numKeywords
+        149    numLines
+       2093    numTokens
+
+          5.37 %Comments
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- DrawDemo.__init__
+- DrawDemo.check_discard_click
+- DrawDemo.check_draw_click
+- DrawDemo.click_is_in
+- DrawDemo.draw
+- DrawDemo.draw_card
+- DrawDemo.draw_deck
+- DrawDemo.draw_deck_label
+- DrawDemo.draw_discard
+- DrawDemo.draw_discard_label
+- DrawDemo.draw_hand
+- DrawDemo.draw_hand_area
+- DrawDemo.keyUp
+- DrawDemo.mouseMotion
+- DrawDemo.mouseUp
+- DrawDemo.update
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- DrawDemo
+
+
+McCabe Complexity Metric for file src/DrawCardDemo.py
+------------------------------------------------------
+
+          2    DrawDemo.__init__
+          4    DrawDemo.check_discard_click
+          4    DrawDemo.check_draw_click
+          1    DrawDemo.click_is_in
+          1    DrawDemo.draw
+          6    DrawDemo.draw_card
+          1    DrawDemo.draw_deck
+          1    DrawDemo.draw_deck_label
+          2    DrawDemo.draw_discard
+          1    DrawDemo.draw_discard_label
+          2    DrawDemo.draw_hand
+          1    DrawDemo.draw_hand_area
+          1    DrawDemo.keyUp
+          1    DrawDemo.mouseMotion
+          4    DrawDemo.mouseUp
+          1    DrawDemo.update
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/DrawCardDemo.py
+-----------------------------------------------
+
+        112    src/DrawCardDemo.py
+
+
+*** Processed 1 module in run ***

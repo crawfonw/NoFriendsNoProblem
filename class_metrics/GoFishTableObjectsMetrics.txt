@@ -1,0 +1,51 @@
+=== File: src/GoFishTableObjects.py ===
+Module src/GoFishTableObjects.py is missing a module doc string. Detected at line 1
+
+In file src/GoFishTableObjects.py, function GoFishTable.winner has 1 extra exit at line 34
+
+Basic Metrics for module src/GoFishTableObjects.py
+--------------------------------------------------
+
+          4    maxBlockDepth
+         12    numBlocks
+       1236    numCharacters
+          1    numClasses
+          4    numFunctions
+         48    numKeywords
+         35    numLines
+          1    numMultipleExitFcns
+        395    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- GoFishTable.__init__
+- GoFishTable.get_winner
+- GoFishTable.play_game
+- GoFishTable.winner
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- GoFishTable
+
+
+McCabe Complexity Metric for file src/GoFishTableObjects.py
+------------------------------------------------------------
+
+          2    GoFishTable.__init__
+          3    GoFishTable.get_winner
+          2    GoFishTable.play_game
+          3    GoFishTable.winner
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/GoFishTableObjects.py
+-----------------------------------------------------
+
+         30    src/GoFishTableObjects.py
+
+
+*** Processed 1 module in run ***

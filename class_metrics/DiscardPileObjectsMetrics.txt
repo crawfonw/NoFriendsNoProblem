@@ -1,0 +1,45 @@
+=== File: src/DiscardPileObjects.py ===
+Module src/DiscardPileObjects.py is missing a module doc string. Detected at line 2
+
+
+Basic Metrics for module src/DiscardPileObjects.py
+--------------------------------------------------
+
+          2    maxBlockDepth
+          4    numBlocks
+        167    numCharacters
+          1    numClasses
+          2    numFunctions
+          9    numKeywords
+         10    numLines
+         72    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- DiscardPile.__init__
+- DiscardPile.add
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- DiscardPile
+
+
+McCabe Complexity Metric for file src/DiscardPileObjects.py
+------------------------------------------------------------
+
+          1    DiscardPile.__init__
+          1    DiscardPile.add
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/DiscardPileObjects.py
+-----------------------------------------------------
+
+          6    src/DiscardPileObjects.py
+
+
+*** Processed 1 module in run ***

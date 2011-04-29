@@ -1,0 +1,59 @@
+=== File: src/GoFishPlayerObjects.py ===
+Module src/GoFishPlayerObjects.py is missing a module doc string. Detected at line 1
+
+In file src/GoFishPlayerObjects.py, function GoFishPlayer.check_point has 2 extra exits at lines 15, 17
+
+Basic Metrics for module src/GoFishPlayerObjects.py
+---------------------------------------------------
+
+          4    maxBlockDepth
+         22    numBlocks
+       1985    numCharacters
+          1    numClasses
+          8    numFunctions
+         66    numKeywords
+         63    numLines
+          1    numMultipleExitFcns
+        684    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- GoFishPlayer.__init__
+- GoFishPlayer.check_point
+- GoFishPlayer.draw_from
+- GoFishPlayer.play_round
+- GoFishPlayer.print_hand
+- GoFishPlayer.remove_all
+- GoFishPlayer.take_card
+- GoFishPlayer.update_score
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- GoFishPlayer
+
+
+McCabe Complexity Metric for file src/GoFishPlayerObjects.py
+-------------------------------------------------------------
+
+          1    GoFishPlayer.__init__
+          3    GoFishPlayer.check_point
+          1    GoFishPlayer.draw_from
+          4    GoFishPlayer.play_round
+          2    GoFishPlayer.print_hand
+          3    GoFishPlayer.remove_all
+          1    GoFishPlayer.take_card
+          2    GoFishPlayer.update_score
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/GoFishPlayerObjects.py
+------------------------------------------------------
+
+         54    src/GoFishPlayerObjects.py
+
+
+*** Processed 1 module in run ***

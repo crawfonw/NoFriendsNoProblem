@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import os
+
+files = []
+
+for tup in os.walk('%s/src' % os.getcwd()):
+    for elem in tup[2]:
+        if elem.endswith('.py') and not elem.endswith('Tests.py'):
+            files.append('%s' % elem)
+
+for f in files:
+    os.popen('./pymetrics -S -C src/%s > class_metrics/%sMetrics.txt' % (f, f.strip('.py')))

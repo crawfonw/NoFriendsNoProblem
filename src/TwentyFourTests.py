@@ -26,11 +26,11 @@ class TwentyFourTests(unittest.TestCase):
 
     def test_guess_validity(self):
         self.assertTrue(self.table.is_valid_guess(self.incorrect_valid_guess))
-        self.assertTrue(!self.table.is_valid_guess(self.incorrect_invalid_guess))
+        self.assertFalse(self.table.is_valid_guess(self.incorrect_invalid_guess))
 
     def test_guess_correctness(self):
         self.assertTrue(self.table.is_correct_guess(self.correct_valid_guess))
-        self.assertTrue(!self.table.is_correct_guess(self.incorrect_valid_guess))
+        self.assertFalse(self.table.is_correct_guess(self.incorrect_valid_guess))
 
     def test_solvability(self):
         self.table.trick.cards = [Card(1, "Hearts"), Card(1, "Spades"), Card(4, "Diamonds"), Card(6, "Clubs")]
@@ -38,7 +38,7 @@ class TwentyFourTests(unittest.TestCase):
 
     def test_solve(self):
         self.trick.cards = [Card(1, "Hearts"), Card(1, "Spades"), Card(4, "Diamonds"), Card(6, "Clubs")]
-        self.table.solve.(players[0])
+        self.table.solve(players[0])
         self.assertEqual(len(self.table.players[0].hand), 22) # player who successfully solves trick takes the cards
         self.assertEqual(len(self.table.players[1].hand), 18)
 
