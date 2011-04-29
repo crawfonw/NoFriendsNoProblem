@@ -5,7 +5,7 @@ from DeckTests import *
 from DiscardPileTests import *
 from PlayerTests import *
 from TableTests import *
-from GoFishTests import *
+from GoFishTableTests import *
 from GoFishPlayerTests import *
 from GoFishHumanPlayerTests import *
 from GoFishAIPlayerTests import *
@@ -16,7 +16,7 @@ from GoFishTableTests import *
 #from SlapJackPlayerTests import *
 #from SlapJackTableTests import *
 
-#from TwentyFourTests import *
+from TwentyFourTests import *
 
 load = unittest.TestLoader().loadTestsFromTestCase
 

@@ -1,18 +1,20 @@
 === File: src/DiscardPileObjects.py ===
 Module src/DiscardPileObjects.py is missing a module doc string. Detected at line 2
 
+In file src/DiscardPileObjects.py, function DiscardPile.peek has 1 extra exit at line 14
 
 Basic Metrics for module src/DiscardPileObjects.py
 --------------------------------------------------
 
-          2    maxBlockDepth
-          4    numBlocks
-        167    numCharacters
+          3    maxBlockDepth
+          6    numBlocks
+        254    numCharacters
           1    numClasses
-          2    numFunctions
-          9    numKeywords
-         10    numLines
-         72    numTokens
+          3    numFunctions
+         15    numKeywords
+         14    numLines
+          1    numMultipleExitFcns
+        113    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -20,6 +22,7 @@ Functions DocString present(+) or missing(-)
 
 - DiscardPile.__init__
 - DiscardPile.add
+- DiscardPile.peek
 
 
 Classes DocString present(+) or missing(-)
@@ -33,13 +36,14 @@ McCabe Complexity Metric for file src/DiscardPileObjects.py
 
           1    DiscardPile.__init__
           1    DiscardPile.add
+          2    DiscardPile.peek
           1    __main__
 
 
 COCOMO 2's SLOC Metric for src/DiscardPileObjects.py
 -----------------------------------------------------
 
-          6    src/DiscardPileObjects.py
+          9    src/DiscardPileObjects.py
 
 
 *** Processed 1 module in run ***

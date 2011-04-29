@@ -7,12 +7,12 @@ Basic Metrics for module src/SlapJackTableObjects.py
 
           2    maxBlockDepth
           6    numBlocks
-        310    numCharacters
+        371    numCharacters
           1    numClasses
           4    numFunctions
-         19    numKeywords
-         17    numLines
-        106    numTokens
+         20    numKeywords
+         18    numLines
+        124    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -43,7 +43,7 @@ McCabe Complexity Metric for file src/SlapJackTableObjects.py
 COCOMO 2's SLOC Metric for src/SlapJackTableObjects.py
 -------------------------------------------------------
 
-         12    src/SlapJackTableObjects.py
+         13    src/SlapJackTableObjects.py
 
 
 *** Processed 1 module in run ***

@@ -1,0 +1,49 @@
+=== File: src/GoFishHumanPlayerObjects.py ===
+Module src/GoFishHumanPlayerObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/GoFishHumanPlayerObjects.py
+--------------------------------------------------------
+
+          3    maxBlockDepth
+         12    numBlocks
+       1145    numCharacters
+          1    numClasses
+          4    numFunctions
+         34    numKeywords
+         34    numLines
+        372    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- GoFishHumanPlayer.draw_from
+- GoFishHumanPlayer.play_round
+- GoFishHumanPlayer.print_hand
+- GoFishHumanPlayer.take_card
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- GoFishHumanPlayer
+
+
+McCabe Complexity Metric for file src/GoFishHumanPlayerObjects.py
+------------------------------------------------------------------
+
+          1    GoFishHumanPlayer.draw_from
+          4    GoFishHumanPlayer.play_round
+          2    GoFishHumanPlayer.print_hand
+          1    GoFishHumanPlayer.take_card
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/GoFishHumanPlayerObjects.py
+-----------------------------------------------------------
+
+         29    src/GoFishHumanPlayerObjects.py
+
+
+*** Processed 1 module in run ***

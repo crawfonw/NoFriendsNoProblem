@@ -1,0 +1,51 @@
+=== File: src/GoFishAIPlayerObjects.py ===
+Module src/GoFishAIPlayerObjects.py is missing a module doc string. Detected at line 1
+
+In file src/GoFishAIPlayerObjects.py, function GoFishAIPlayer.get_best_value has 2 extra exits at lines 22, 24
+
+Basic Metrics for module src/GoFishAIPlayerObjects.py
+-----------------------------------------------------
+
+          3    maxBlockDepth
+         13    numBlocks
+       1079    numCharacters
+          1    numClasses
+          4    numFunctions
+         35    numKeywords
+         34    numLines
+          1    numMultipleExitFcns
+        378    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- GoFishAIPlayer.draw_from
+- GoFishAIPlayer.get_best_value
+- GoFishAIPlayer.play_round
+- GoFishAIPlayer.take_card
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- GoFishAIPlayer
+
+
+McCabe Complexity Metric for file src/GoFishAIPlayerObjects.py
+---------------------------------------------------------------
+
+          1    GoFishAIPlayer.draw_from
+          3    GoFishAIPlayer.get_best_value
+          3    GoFishAIPlayer.play_round
+          1    GoFishAIPlayer.take_card
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/GoFishAIPlayerObjects.py
+--------------------------------------------------------
+
+         29    src/GoFishAIPlayerObjects.py
+
+
+*** Processed 1 module in run ***

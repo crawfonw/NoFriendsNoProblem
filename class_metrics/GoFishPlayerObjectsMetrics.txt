@@ -7,14 +7,14 @@ Basic Metrics for module src/GoFishPlayerObjects.py
 ---------------------------------------------------
 
           4    maxBlockDepth
-         22    numBlocks
-       1985    numCharacters
+         17    numBlocks
+       1135    numCharacters
           1    numClasses
           8    numFunctions
-         66    numKeywords
-         63    numLines
+         51    numKeywords
+         46    numLines
           1    numMultipleExitFcns
-        684    numTokens
+        418    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -42,7 +42,7 @@ McCabe Complexity Metric for file src/GoFishPlayerObjects.py
           1    GoFishPlayer.__init__
           3    GoFishPlayer.check_point
           1    GoFishPlayer.draw_from
-          4    GoFishPlayer.play_round
+          1    GoFishPlayer.play_round
           2    GoFishPlayer.print_hand
           3    GoFishPlayer.remove_all
           1    GoFishPlayer.take_card
@@ -53,7 +53,7 @@ McCabe Complexity Metric for file src/GoFishPlayerObjects.py
 COCOMO 2's SLOC Metric for src/GoFishPlayerObjects.py
 ------------------------------------------------------
 
-         54    src/GoFishPlayerObjects.py
+         37    src/GoFishPlayerObjects.py
 
 
 *** Processed 1 module in run ***
