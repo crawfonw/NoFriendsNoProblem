@@ -9,9 +9,6 @@ from TrickObjects import Trick
 class TestTwentyFour(unittest.TestCase):
     def setUp(self):
         self.table = TwentyFourTable()
-        self.correct_valid_guess = "6 + 6 + 6 + 6"
-        self.incorrect_valid_guess = "1 + 1 + 1 + 1"
-        self.incorrect_invalid_guess = "1 +"
         self.trick = Trick()
         self.trick.cards = [Card(1, "Hearts"), Card(1, "Spades"), Card(4, "Diamonds"), Card(6, "Clubs")]
 
@@ -32,12 +29,19 @@ class TestTwentyFour(unittest.TestCase):
         self.assertTrue(self.table.buzzed_in == 0)
 
     def test_guess_validity(self):
-        self.assertTrue(self.table.is_valid_guess(self.incorrect_valid_guess))
-        self.assertFalse(self.table.is_valid_guess(self.incorrect_invalid_guess))
+        self.assertTrue(self.table.is_valid_guess("1+1+1+1"))
+        self.assertTrue(self.table.is_valid_guess("(1+1+1)+1"))
+        self.assertTrue(self.table.is_valid_guess("1+1+(1+(1))"))
+        self.assertTrue(self.table.is_valid_guess("((1+1))"))
+
+        self.assertFalse(self.table.is_valid_guess("1+"))
+        self.assertFalse(self.table.is_valid_guess("(1+1"))
+        self.assertFalse(self.table.is_valid_guess("(1+)1"))
+        self.assertFalse(self.table.is_valid_guess("+"))
 
     def test_guess_correctness(self):
-        self.assertTrue(self.table.is_correct_guess(self.correct_valid_guess))
-        self.assertFalse(self.table.is_correct_guess(self.incorrect_valid_guess))
+        self.assertTrue(self.table.is_correct_guess("6 + 6 + 6 + 6"))
+        self.assertFalse(self.table.is_correct_guess("1 + 1 + 1 + 1"))
 
     def test_solvability(self):
         self.assertTrue(self.table.is_solvable(self.trick))
@@ -57,3 +61,6 @@ class TestTwentyFour(unittest.TestCase):
     def test_point_winning_condition(self):
         self.table.players[0].points = 15 # player 0 accumulates 15 points
         self.assertEqual(self.table.winner(), 0) # assert that player 0 has won
+
+if __name__ == '__main__':
+    unittest.main()

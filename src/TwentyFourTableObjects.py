@@ -2,6 +2,7 @@ from TableObjects import Table
 from TwentyFourPlayerObjects import TwentyFourPlayer
 from TwentyFourDeckObjects import TwentyFourDeck
 from TrickObjects import Trick
+import compiler
 
 class TwentyFourTable(Table):
     def __init__(self):
@@ -76,8 +77,8 @@ class TwentyFourTable(Table):
         is_valid = True
 
         try:
-            eval(guess)
-        except Exception:
+            ast = compiler.parse(guess)
+        except SyntaxError:
             is_valid = False
         return is_valid
 
