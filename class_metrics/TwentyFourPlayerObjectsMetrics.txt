@@ -1,0 +1,43 @@
+=== File: src/TwentyFourPlayerObjects.py ===
+Module src/TwentyFourPlayerObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/TwentyFourPlayerObjects.py
+-------------------------------------------------------
+
+          2    maxBlockDepth
+          3    numBlocks
+        168    numCharacters
+          1    numClasses
+          1    numFunctions
+          9    numKeywords
+          9    numLines
+         63    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- TwentyFourPlayer.__init__
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- TwentyFourPlayer
+
+
+McCabe Complexity Metric for file src/TwentyFourPlayerObjects.py
+-----------------------------------------------------------------
+
+          1    TwentyFourPlayer.__init__
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/TwentyFourPlayerObjects.py
+----------------------------------------------------------
+
+          6    src/TwentyFourPlayerObjects.py
+
+
+*** Processed 1 module in run ***

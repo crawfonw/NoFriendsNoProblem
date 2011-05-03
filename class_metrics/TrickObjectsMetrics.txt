@@ -1,0 +1,43 @@
+=== File: src/TrickObjects.py ===
+Module src/TrickObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/TrickObjects.py
+--------------------------------------------
+
+          2    maxBlockDepth
+          3    numBlocks
+        100    numCharacters
+          1    numClasses
+          1    numFunctions
+          6    numKeywords
+          6    numLines
+         44    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- Trick.__init__
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- Trick
+
+
+McCabe Complexity Metric for file src/TrickObjects.py
+------------------------------------------------------
+
+          1    Trick.__init__
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/TrickObjects.py
+-----------------------------------------------
+
+          4    src/TrickObjects.py
+
+
+*** Processed 1 module in run ***

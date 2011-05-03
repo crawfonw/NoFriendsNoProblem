@@ -1,0 +1,43 @@
+=== File: src/TwentyFourDeckObjects.py ===
+Module src/TwentyFourDeckObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/TwentyFourDeckObjects.py
+-----------------------------------------------------
+
+          4    maxBlockDepth
+          5    numBlocks
+        327    numCharacters
+          1    numClasses
+          1    numFunctions
+         14    numKeywords
+         12    numLines
+        120    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- TwentyFourDeck.__init__
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- TwentyFourDeck
+
+
+McCabe Complexity Metric for file src/TwentyFourDeckObjects.py
+---------------------------------------------------------------
+
+          3    TwentyFourDeck.__init__
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/TwentyFourDeckObjects.py
+--------------------------------------------------------
+
+         10    src/TwentyFourDeckObjects.py
+
+
+*** Processed 1 module in run ***
