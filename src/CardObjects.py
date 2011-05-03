@@ -44,4 +44,4 @@ class Card(object):
         if self.value < other.value:
             return 1
         else:
-            return -1
+            return 0

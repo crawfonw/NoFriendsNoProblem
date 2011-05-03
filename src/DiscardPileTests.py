@@ -28,6 +28,44 @@ class TestDiscardPile(unittest.TestCase):
     def test_peek_no_cards(self):
         self.assertEqual(self.pile.peek(), None)
 
+    def test_has_double(self):
+        self.pile.add(Card(1, "Clubs"))
+        self.pile.add(Card(1, "Diamonds"))
+        self.assertTrue(self.pile.has_double())
+
+    def test_hasnt_double(self):
+        self.pile.add(Card(1, "Clubs"))
+        self.pile.add(Card(2, "Diamonds"))
+        self.assertFalse(self.pile.has_double())
+
+    def test_hasnt_double_empty(self):
+        self.assertFalse(self.pile.has_double())
+
+    def test_hasnt_double_too_few_cards(self):
+        self.pile.add(Card(6, "Spades"))
+        self.assertFalse(self.pile.has_double())
+
+    def test_has_sandwich(self):
+        self.pile.add(Card(1, "Clubs"))
+        self.pile.add(Card(2, "Hearts"))
+        self.pile.add(Card(1, "Diamonds"))
+        self.assertTrue(self.pile.has_sandwich())
+
+    def test_hasnt_sandwich(self):
+        self.pile.add(Card(2, "Clubs"))
+        self.pile.add(Card(1, "Hearts"))
+        self.pile.add(Card(1, "Diamonds"))
+        self.assertFalse(self.pile.has_sandwich())
+
+    def test_hasnt_sandwich_empty(self):
+        self.assertFalse(self.pile.has_sandwich())
+
+    def test_hasnt_sandwich_too_few_cards(self):
+        self.pile.add(Card(1, "Clubs"))
+        self.assertFalse(self.pile.has_sandwich())
+        self.pile.add(Card(1, "Hearts"))
+        self.assertFalse(self.pile.has_sandwich())
+
 if __name__ == '__main__':
     unittest.main()
 

@@ -17,6 +17,24 @@ class TestTable(unittest.TestCase):
 
         for i in range(2):
             self.assertTrue(self.table.players[1].hand[i].same_as([Card(13, "Hearts"), Card(13, "Diamonds")][i]))
+
+    def test_deal_all_divisible_number_of_players(self):
+        self.table.deck.cards = [Card(13, "Hearts"), Card(13, "Spades"), Card(13, "Diamonds"), Card(13, "Clubs")]
+        self.table.deal_all()
+        for i in range(2):
+            self.assertTrue(self.table.players[0].hand[i].same_as([Card(13, "Spades"), Card(13, "Clubs")][i]))
+
+        for i in range(2):
+            self.assertTrue(self.table.players[1].hand[i].same_as([Card(13, "Hearts"), Card(13, "Diamonds")][i]))
+
+    def test_deal_all_not_divisible_number_of_players(self):
+        self.table.deck.cards = [Card(1, "Spades"), Card(13, "Hearts"), Card(13, "Spades"), Card(13, "Diamonds"), Card(13, "Clubs")]
+        self.table.deal_all()
+        for i in range(3):
+            self.assertTrue(self.table.players[0].hand[i].same_as([Card(1, "Spades"), Card(13, "Spades"), Card(13, "Clubs")][i]))
+
+        for i in range(2):
+            self.assertTrue(self.table.players[1].hand[i].same_as([Card(13, "Hearts"), Card(13, "Diamonds")][i]))
     
     def test_deal_without_enough_cards(self):
         self.table.deck.cards = [Card(13, "Hearts"), Card(13, "Spades"), Card(13, "Diamonds"), Card(13, "Clubs")]
