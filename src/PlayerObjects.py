@@ -2,8 +2,12 @@ from DeckObjects import Deck
 
 class Player(object):
     
-    def __init__(self):
+    def __init__(self, name = ''):
         self.hand = []
+        self.name = name
+
+    def __str__(self):
+        return self.name
         
     def draw_from(self, deck):
         try:

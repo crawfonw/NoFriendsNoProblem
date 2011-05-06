@@ -3,9 +3,10 @@ from CardObjects import Card
 
 class GoFishPlayer(Player):
 
-    def __init__(self):
+    def __init__(self, name = ''):
         self.hand = []
         self.score = 0
+        self.name = name
 
     def check_point(self):
         card_values = [0 for i in range(13)]
@@ -43,4 +44,7 @@ class GoFishPlayer(Player):
         pass
 
     def play_round(self, others, deck):
+        pass
+
+    def player_type(self):
         pass

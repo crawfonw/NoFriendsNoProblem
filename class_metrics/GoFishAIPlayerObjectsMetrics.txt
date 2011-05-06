@@ -1,20 +1,21 @@
 === File: src/GoFishAIPlayerObjects.py ===
 Module src/GoFishAIPlayerObjects.py is missing a module doc string. Detected at line 1
 
-In file src/GoFishAIPlayerObjects.py, function GoFishAIPlayer.get_best_value has 2 extra exits at lines 22, 24
+In file src/GoFishAIPlayerObjects.py, function GoFishAIPlayer.get_best_value has 2 extra exits at lines 27, 29
+In file src/GoFishAIPlayerObjects.py, function GoFishAIPlayer.play_round has 2 extra exits at lines 36, 41
 
 Basic Metrics for module src/GoFishAIPlayerObjects.py
 -----------------------------------------------------
 
           3    maxBlockDepth
-         13    numBlocks
-       1079    numCharacters
+         14    numBlocks
+       1328    numCharacters
           1    numClasses
-          4    numFunctions
-         35    numKeywords
-         34    numLines
-          1    numMultipleExitFcns
-        378    numTokens
+          5    numFunctions
+         43    numKeywords
+         41    numLines
+          2    numMultipleExitFcns
+        448    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -23,6 +24,7 @@ Functions DocString present(+) or missing(-)
 - GoFishAIPlayer.draw_from
 - GoFishAIPlayer.get_best_value
 - GoFishAIPlayer.play_round
+- GoFishAIPlayer.player_type
 - GoFishAIPlayer.take_card
 
 
@@ -38,6 +40,7 @@ McCabe Complexity Metric for file src/GoFishAIPlayerObjects.py
           1    GoFishAIPlayer.draw_from
           3    GoFishAIPlayer.get_best_value
           3    GoFishAIPlayer.play_round
+          1    GoFishAIPlayer.player_type
           1    GoFishAIPlayer.take_card
           1    __main__
 
@@ -45,7 +48,7 @@ McCabe Complexity Metric for file src/GoFishAIPlayerObjects.py
 COCOMO 2's SLOC Metric for src/GoFishAIPlayerObjects.py
 --------------------------------------------------------
 
-         29    src/GoFishAIPlayerObjects.py
+         35    src/GoFishAIPlayerObjects.py
 
 
 *** Processed 1 module in run ***

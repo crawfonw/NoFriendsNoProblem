@@ -1,20 +1,20 @@
 === File: src/GoFishPlayerObjects.py ===
 Module src/GoFishPlayerObjects.py is missing a module doc string. Detected at line 1
 
-In file src/GoFishPlayerObjects.py, function GoFishPlayer.check_point has 2 extra exits at lines 15, 17
+In file src/GoFishPlayerObjects.py, function GoFishPlayer.check_point has 2 extra exits at lines 16, 18
 
 Basic Metrics for module src/GoFishPlayerObjects.py
 ---------------------------------------------------
 
           4    maxBlockDepth
-         17    numBlocks
-       1135    numCharacters
+         18    numBlocks
+       1212    numCharacters
           1    numClasses
-          8    numFunctions
-         51    numKeywords
-         46    numLines
+          9    numFunctions
+         55    numKeywords
+         50    numLines
           1    numMultipleExitFcns
-        418    numTokens
+        450    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -24,6 +24,7 @@ Functions DocString present(+) or missing(-)
 - GoFishPlayer.check_point
 - GoFishPlayer.draw_from
 - GoFishPlayer.play_round
+- GoFishPlayer.player_type
 - GoFishPlayer.print_hand
 - GoFishPlayer.remove_all
 - GoFishPlayer.take_card
@@ -43,6 +44,7 @@ McCabe Complexity Metric for file src/GoFishPlayerObjects.py
           3    GoFishPlayer.check_point
           1    GoFishPlayer.draw_from
           1    GoFishPlayer.play_round
+          1    GoFishPlayer.player_type
           2    GoFishPlayer.print_hand
           3    GoFishPlayer.remove_all
           1    GoFishPlayer.take_card
@@ -53,7 +55,7 @@ McCabe Complexity Metric for file src/GoFishPlayerObjects.py
 COCOMO 2's SLOC Metric for src/GoFishPlayerObjects.py
 ------------------------------------------------------
 
-         37    src/GoFishPlayerObjects.py
+         40    src/GoFishPlayerObjects.py
 
 
 *** Processed 1 module in run ***

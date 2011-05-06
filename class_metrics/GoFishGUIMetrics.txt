@@ -5,33 +5,39 @@ Module src/GoFishGUI.py is missing a module doc string. Detected at line 1
 Basic Metrics for module src/GoFishGUI.py
 -----------------------------------------
 
-          4    maxBlockDepth
-         32    numBlocks
-       5411    numCharacters
+          7    maxBlockDepth
+         53    numBlocks
+       9143    numCharacters
           1    numClasses
-         11    numComments
-          1    numCommentsInline
-         14    numFunctions
-        193    numKeywords
-        138    numLines
-       1957    numTokens
+         15    numComments
+          6    numCommentsInline
+         20    numFunctions
+        323    numKeywords
+        213    numLines
+       3097    numTokens
 
-          7.97 %Comments
-          0.72 %CommentsInline
+          7.04 %Comments
+          2.82 %CommentsInline
 
 Functions DocString present(+) or missing(-)
 --------------------------------------------
 
 - DrawDemo.__init__
-- DrawDemo.check_discard_click
 - DrawDemo.check_draw_click
 - DrawDemo.click_is_in
+- DrawDemo.click_is_in_hand
 - DrawDemo.draw
+- DrawDemo.draw_all
 - DrawDemo.draw_card
 - DrawDemo.draw_deck
 - DrawDemo.draw_deck_label
 - DrawDemo.draw_hand
 - DrawDemo.draw_hand_area
+- DrawDemo.draw_message
+- DrawDemo.draw_score
+- DrawDemo.draw_selected_player
+- DrawDemo.draw_turn_button
+- DrawDemo.draw_turn_label
 - DrawDemo.keyUp
 - DrawDemo.mouseMotion
 - DrawDemo.mouseUp
@@ -48,18 +54,24 @@ McCabe Complexity Metric for file src/GoFishGUI.py
 ---------------------------------------------------
 
           2    DrawDemo.__init__
-          4    DrawDemo.check_discard_click
-          4    DrawDemo.check_draw_click
+          2    DrawDemo.check_draw_click
           1    DrawDemo.click_is_in
+          7    DrawDemo.click_is_in_hand
           1    DrawDemo.draw
+          1    DrawDemo.draw_all
           6    DrawDemo.draw_card
           1    DrawDemo.draw_deck
           1    DrawDemo.draw_deck_label
           2    DrawDemo.draw_hand
           1    DrawDemo.draw_hand_area
-          1    DrawDemo.keyUp
+          1    DrawDemo.draw_message
+          2    DrawDemo.draw_score
+          3    DrawDemo.draw_selected_player
+          1    DrawDemo.draw_turn_button
+          1    DrawDemo.draw_turn_label
+          4    DrawDemo.keyUp
           1    DrawDemo.mouseMotion
-          4    DrawDemo.mouseUp
+         12    DrawDemo.mouseUp
           1    DrawDemo.update
           1    __main__
 
@@ -67,7 +79,7 @@ McCabe Complexity Metric for file src/GoFishGUI.py
 COCOMO 2's SLOC Metric for src/GoFishGUI.py
 --------------------------------------------
 
-        101    src/GoFishGUI.py
+        163    src/GoFishGUI.py
 
 
 *** Processed 1 module in run ***

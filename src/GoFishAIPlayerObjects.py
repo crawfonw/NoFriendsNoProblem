@@ -3,6 +3,9 @@ from random import randrange
 
 class GoFishAIPlayer(GoFishPlayer):
 
+    def player_type(self):
+        return 1
+
     def draw_from(self, deck):
         try:
             self.hand.insert(0, deck.draw())
@@ -10,9 +13,11 @@ class GoFishAIPlayer(GoFishPlayer):
             pass
 
     def take_card(self, other, index):
-        print("Opponent takes the {}!".format(other.hand[index]))
+        ret = "%s takes the %s from %s! The turn is over." % (self, other.hand[index], str(other))
+        print ret
         self.hand = self.hand + [other.hand[index]]
         other.hand = other.hand[0:index] + other.hand[index+1:]
+        return ret
 
     def get_best_value(self):
         card_values = [0 for i in range(13)]
@@ -28,7 +33,9 @@ class GoFishAIPlayer(GoFishPlayer):
         value = self.get_best_value()
         index = others[player].has_card_index(value)
         if index > -1:
-            self.take_card(others[player], index)
+            return self.take_card(others[player], index)
         else:
-            print("Opponent fishes...")
             self.draw_from(deck)
+            ret = "%s asks if %s has any %s's, but must fish... Their turn is over." % (self, str(others[player]), value)
+            print ret
+            return ret
