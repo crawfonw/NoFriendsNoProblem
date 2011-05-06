@@ -24,6 +24,12 @@ class Table(object):
             for player in self.players:
                 player.draw_from(self.deck)
 
+    def deal_all(self):
+        player = 0
+        while len(self.deck.cards) > 0:
+            self.players[player].draw_from(self.deck)
+            player = (player + 1) % len(self.players)
+
     def play_game(self):
         while not self.winner():
             self.trick.cards = []

@@ -1,7 +1,7 @@
 from PlayerObjects import Player
 from CardObjects import Card
 
-class SlapJackPlayer(Player):
+class ERSPlayer(Player):
     
     def __init__(self):
         pass

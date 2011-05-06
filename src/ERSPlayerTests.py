@@ -1,8 +1,8 @@
 import unittest
-from SlapJackPlayerObjects import SlapJackPlayer
+from ERSPlayerObjects import ERSPlayer
 from CardObjects import Card
 
-class TestSlapJackPlayer(unittest.TestCase):
+class TestERSPlayer(unittest.TestCase):
 
     def setUp(self):
         self.player = SlapJackPlayer

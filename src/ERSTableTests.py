@@ -1,10 +1,10 @@
 import unittest
-from GoFishTableObjects import GoFishTable
+from ERSTableObjects import ERSTable
 from PlayerObjects import Player
 from DeckObjects import Deck
 from CardObjects import Card
 
-class TestSlapJackTable(unittest.TestCase):
+class TestERSTable(unittest.TestCase):
 
     def setUp(self):
         self.table = TestSlapJackTable(2)
