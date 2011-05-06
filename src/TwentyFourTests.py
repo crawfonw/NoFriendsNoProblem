@@ -9,8 +9,8 @@ from TrickObjects import Trick
 class TestTwentyFour(unittest.TestCase):
     def setUp(self):
         self.table = TwentyFourTable()
-        self.trick = Trick()
-        self.trick.cards = [Card(1, "Hearts"), Card(1, "Spades"), Card(4, "Diamonds"), Card(6, "Clubs")]
+        self.table.trick = Trick()
+        self.table.trick.cards = [Card(1, "Hearts"), Card(1, "Spades"), Card(4, "Diamonds"), Card(6, "Clubs")]
 
     def test_initial_state(self):
         self.assertEqual(len(self.table.players), 2) # game has exactly two players
@@ -39,14 +39,24 @@ class TestTwentyFour(unittest.TestCase):
         self.assertFalse(self.table.is_valid_guess("(1+)1"))
         self.assertFalse(self.table.is_valid_guess("+"))
 
+    def test_guess_legality(self):
+        self.assertTrue(self.table.is_legal_guess("1+1-4+6"))
+        self.assertTrue(self.table.is_legal_guess("(6*4*1)+1"))
+        self.assertTrue(self.table.is_legal_guess("1+1/(4+(6))"))
+
+        self.assertFalse(self.table.is_legal_guess("1+1%4+6"))
+        self.assertFalse(self.table.is_legal_guess("(6*4*6)+1"))
+        self.assertFalse(self.table.is_legal_guess("1/(4+(6))"))
+
     def test_guess_correctness(self):
         self.assertTrue(self.table.is_correct_guess("6 + 6 + 6 + 6"))
         self.assertFalse(self.table.is_correct_guess("1 + 1 + 1 + 1"))
 
     def test_solvability(self):
-        self.assertTrue(self.table.is_solvable(self.trick))
+        self.assertTrue(self.table.find_solution() != False)
 
     def test_solve(self):
+        self.table.trick = Trick()
         self.table.play_round()
         self.table.solve(0)
         self.assertEqual(len(self.table.players[0].hand), 22) # player who successfully solves trick takes the cards
