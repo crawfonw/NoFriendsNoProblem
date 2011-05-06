@@ -98,6 +98,7 @@ class TwentyFourTable(Table):
         self.buzzed_in = player_num
 
     # Test for syntactical correctness.
+    # FIXME: Some valid formulae are throwing false negatives.
     def is_valid_guess(self, guess):
         is_valid = True
 
