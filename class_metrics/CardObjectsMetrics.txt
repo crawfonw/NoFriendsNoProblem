@@ -10,13 +10,13 @@ Basic Metrics for module src/CardObjects.py
 
           4    maxBlockDepth
          22    numBlocks
-       1194    numCharacters
+       1193    numCharacters
           1    numClasses
           5    numFunctions
          61    numKeywords
          47    numLines
           3    numMultipleExitFcns
-        444    numTokens
+        443    numTokens
 
 
 Functions DocString present(+) or missing(-)

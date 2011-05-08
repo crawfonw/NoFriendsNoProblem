@@ -1,6 +1,7 @@
 from TableObjects import Table
 from ERSPlayerObjects import ERSPlayer
 from DiscardPileObjects import DiscardPile
+from DeckObjects import Deck
 
 class ERSTable(Table):
    
@@ -8,7 +9,7 @@ class ERSTable(Table):
         self.players = []
         self.deck = Deck()
         self.pile = DiscardPile()
-        self.deck.sheffle()
+        self.deck.shuffle()
         for i in range(player_count):
             self.players.append(ERSPlayer())
         self.deal_all()

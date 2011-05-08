@@ -7,7 +7,7 @@ from CardObjects import Card
 class TestERSTable(unittest.TestCase):
 
     def setUp(self):
-        self.table = TestSlapJackTable(2)
+        self.table = ERSTable(2)
 
     def test_initial_state(self):
         self.assertEqual(len(self.table.pile), 0)
@@ -50,7 +50,7 @@ class TestERSTable(unittest.TestCase):
         
     def test_cards_added_to_player_pile_on_incorrect_slap(self):
         self.table.players[0].pile.cards = [Card(13, "Diamonds"), Card(13, "Clubs"), Card(13, "Hearts")]
-        self.table.players[1].pile.cards = [[Card(11, "Spades")]
+        self.table.players[1].pile.cards = [Card(11, "Spades")]
         self.table.pile.cards = [Card(2, "Clubs"), Card(2, "Hearts")]
         self.table.pile.add(self.table.players[1].flip())
         self.table.players[1].slap(self.table.pile.peek())

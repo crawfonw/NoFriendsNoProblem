@@ -9,5 +9,10 @@ for tup in os.walk('%s/src' % os.getcwd()):
         if elem.endswith('.py') and not elem.endswith('Tests.py'):
             files.append('%s' % elem)
 
+l = ''
+
 for f in files:
+    l += 'src/%s ' % f
     os.popen('./pymetrics -S -C src/%s > class_metrics/%sMetrics.txt' % (f, f.strip('.py')))
+
+    os.popen('./pymetrics -S -C -f %s > class_metrics/AllMetrics.txt' % l)

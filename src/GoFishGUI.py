@@ -7,7 +7,7 @@ from DeckObjects import Deck
 
 from GoFishTableObjects import GoFishTable
 
-class DrawDemo(PygameHelper):
+class GoFishGUI(PygameHelper):
     
     def __init__(self):
         #constants: sizes, colors, etc.
@@ -209,5 +209,5 @@ class DrawDemo(PygameHelper):
 
 
 
-s = DrawDemo()
+s = GoFishGUI()
 s.mainLoop(40)
