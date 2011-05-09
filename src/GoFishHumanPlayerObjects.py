@@ -6,7 +6,7 @@ class GoFishHumanPlayer(GoFishPlayer):
         return 0
 
     def print_hand(self):
-        print "Your hand contains: %s" % self.hand
+        print("Your hand contains: %s" % self.hand)
 
     def take_card(self, other, index):
         ret = "You take the %s!" % other.hand[index]
@@ -22,7 +22,7 @@ class GoFishHumanPlayer(GoFishPlayer):
             return ret
         except:
             ret = "The deck is empty!"
-            print ret
+            print(ret)
             return ret
 
     def play_round(self, card_value, others, player_id, deck):
@@ -32,5 +32,5 @@ class GoFishHumanPlayer(GoFishPlayer):
         else:
             ret = self.draw_from(deck)
             newret = "Go Fish! - %s" % ret
-            print newret
+            print(newret)
             return newret

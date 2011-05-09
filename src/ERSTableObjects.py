@@ -1,6 +1,8 @@
 from TableObjects import Table
 from ERSPlayerObjects import ERSPlayer
 from DiscardPileObjects import DiscardPile
+from DeckObjects import Deck
+from time import sleep
 
 class ERSTable(Table):
    
@@ -8,16 +10,57 @@ class ERSTable(Table):
         self.players = []
         self.deck = Deck()
         self.pile = DiscardPile()
-        self.deck.sheffle()
+        self.deck.shuffle()
+        self.slapped = False
         for i in range(player_count):
             self.players.append(ERSPlayer())
         self.deal_all()
 
     def get_winner(self):
-        pass
+        for i in range(len(self.players)):
+            return i
 
     def play_game(self):
-        pass
+        player = 0
+        while not self.get_winner():
+            value = 0
+            if len(self.pile.cards) > 0:
+                value = self.pile.peek().value
+            if value == 1 or value > 10:
+                player = self.war(player)
+            else:
+                if player == 0:
+                    input("Play a card!")
+                card = self.players[player].flip()
+                print("Player {} plays the {}!".format(player, card))
+                self.pile.add(card)
+            self.wait_for_slap(0.25)
+            player = ((player + 1) % len(self.players))
+        print("Player {} wins!".format(self.winner()))
+
+    def wait_for_slap(self, t):
+        sleep(t)
+
+    def war(self, player):
+        value = self.pile.peek().value
+        num = 0
+        if value == 1:
+            num = 4
+        else:
+            num = value - 10
+        for i in range(num):
+            card = self.players[player].flip()
+            print("Player {} plays the {}!".format(player, card))
+            self.pile.add(card)
+            value = card.value
+            if value == 1 or value > 10:
+                return player
+        self.players[player].cards = self.pile.cards + self.players[player].hand
+        self.pile.cards = []
+        return player - 1        
 
     def winner(self):
-        pass
+        for player in self.players:
+            if len(player.cards) == 0:
+                return True
+        return False

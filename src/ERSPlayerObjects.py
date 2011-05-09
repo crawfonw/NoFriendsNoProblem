@@ -4,10 +4,9 @@ from CardObjects import Card
 class ERSPlayer(Player):
     
     def __init__(self):
-        pass
+        self.hand = []
 
     def flip(self):
-        pass
-
-    def slap(self, card):
-        pass
+        card = self.hand[-1]
+        self.hand = self.hand[:-1]
+        return card
