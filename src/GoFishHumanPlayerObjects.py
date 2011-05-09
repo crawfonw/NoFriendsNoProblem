@@ -12,7 +12,7 @@ class GoFishHumanPlayer(GoFishPlayer):
         ret = "You take the %s!" % other.hand[index]
         self.hand = self.hand + [other.hand[index]]
         other.hand = other.hand[0:index] + other.hand[index+1:]
-        print ret
+        print(ret)
         return ret
 
     def draw_from(self, deck):

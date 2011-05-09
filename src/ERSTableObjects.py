@@ -22,7 +22,7 @@ class ERSTable(Table):
 
     def play_game(self):
         player = 0
-        while not self.get_winner():
+        while not self.winner():
             value = 0
             if len(self.pile.cards) > 0:
                 value = self.pile.peek().value
@@ -36,7 +36,7 @@ class ERSTable(Table):
                 self.pile.add(card)
             self.wait_for_slap(0.25)
             player = ((player + 1) % len(self.players))
-        print("Player {} wins!".format(self.winner()))
+        print("Player {} wins!".format(self.get_winner()))
 
     def wait_for_slap(self, t):
         sleep(t)
@@ -53,6 +53,7 @@ class ERSTable(Table):
             print("Player {} plays the {}!".format(player, card))
             self.pile.add(card)
             value = card.value
+            self.wait_for_slap(0.25)
             if value == 1 or value > 10:
                 return player
         self.players[player].cards = self.pile.cards + self.players[player].hand
@@ -61,6 +62,6 @@ class ERSTable(Table):
 
     def winner(self):
         for player in self.players:
-            if len(player.cards) == 0:
+            if len(player.hand) == 0:
                 return True
         return False

@@ -14,7 +14,7 @@ class GoFishAIPlayer(GoFishPlayer):
 
     def take_card(self, other, index):
         ret = "%s takes the %s from %s! The turn is over." % (self, other.hand[index], str(other))
-        print ret
+        print(ret)
         self.hand = self.hand + [other.hand[index]]
         other.hand = other.hand[0:index] + other.hand[index+1:]
         return ret
@@ -37,5 +37,5 @@ class GoFishAIPlayer(GoFishPlayer):
         else:
             self.draw_from(deck)
             ret = "%s asks if %s has any %s's, but must fish... Their turn is over." % (self, str(others[player]), value)
-            print ret
+            print(ret)
             return ret

@@ -34,7 +34,7 @@ class TestERSTable(unittest.TestCase):
 
     def test_no_winner_exists2(self):
         self.table.players[0].hand.extend(self.table.players[1].hand)
-        self.table.players[1].hand = self.table.players[0].hand[0]
+        self.table.players[1].hand[0] = self.table.players[0].hand[0]
         self.table.players[0].hand = self.table.players[0].hand[1:]
         self.assertFalse(self.table.winner())
 
