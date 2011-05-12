@@ -2,7 +2,6 @@
 class Card(object):
     
     def __init__(self, value=None, suit=None, name=None):
-        
         if value == None or suit == None or suit == "":
             raise ValueError
         else:
