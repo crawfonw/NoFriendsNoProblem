@@ -2,22 +2,28 @@ from CardObjects import Card
 
 class UnoCard(Card):
 
-    def __init__(self, value=None, card_type=None, color=None):
-        if value == None or card_type == None or color == None \
+    def __init__(self, value=None, type=None, color=None):
+        if value == None or type == None or color == None \
             or color not in ['Black', 'Red', 'Blue', 'Green', 'Yellow'] \
-            or card_type not in ['Number', 'Skip', 'Reverse', 'Draw Two', 'Wild']:
+            or type not in ['Number', 'Skip', 'Reverse', 'Draw Two', 'Wild']:
             raise ValueError
         else:
             self.value = value
-            self.card_type = card_type
+            self.type = type
             self.color = color
 
     def __str__(self):
-        if self.card_type is 'Number':
+        if self.type is 'Number':
             return '%s %s' % (self.color, self.value)
-        elif self.card_type is 'Wild':
+        elif self.type is 'Wild':
             return 'Wild Card'
         else:
-            return '%s %s' % (self.color, self.card_type)
+            return '%s %s' % (self.color, self.type)
 
     __repr__ = __str__
+
+    def set_color_of_wild(self, color):
+        if color in ['Red', 'Blue', 'Green', 'Yellow'] and self.type == 'Wild':
+            self.color = color
+        else:
+            raise ValueError

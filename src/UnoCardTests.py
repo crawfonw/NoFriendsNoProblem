@@ -27,6 +27,20 @@ class TestUnoCard(unittest.TestCase):
     def test_invalid_number(self):
         self.assertRaises(ValueError, UnoCard, 14, "Hearts")
 
+    def test_valid_set_color_of_wild(self):
+        c = UnoCard(-1, "Wild", "Black")
+        self.assertTrue(c.color == "Black")
+        c.set_color_of_wild("Red")
+        self.assertTrue(c.color == "Red")
+
+    def test_invalid_color_of_wild(self):
+        c = UnoCard(-1, "Wild", "Black")
+        self.assertRaises(ValueError, UnoCard.set_color_of_wild, c, "Stupendous")
+
+    def test_invalid_card_color_set(self):
+        c = UnoCard(0, "Number", "Red")
+        self.assertRaises(ValueError, UnoCard.set_color_of_wild, c, "Blue")
+
 if __name__ == '__main__':
     unittest.main()
 
