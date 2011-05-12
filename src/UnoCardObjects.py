@@ -16,7 +16,10 @@ class UnoCard(Card):
         if self.type is 'Number':
             return '%s %s' % (self.color, self.value)
         elif self.type is 'Wild':
-            return 'Wild Card'
+            if self.color != 'Black':
+                return '%s Wild' % self.color
+            else:
+                return 'Wild Card'
         else:
             return '%s %s' % (self.color, self.type)
 
