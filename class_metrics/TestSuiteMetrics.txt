@@ -6,13 +6,13 @@ Basic Metrics for module src/TestSuite.py
 -----------------------------------------
 
           1    numBlocks
-        765    numCharacters
-          2    numComments
-         25    numKeywords
-         27    numLines
-        199    numTokens
+        679    numCharacters
+          1    numComments
+         23    numKeywords
+         23    numLines
+        182    numTokens
 
-          7.41 %Comments
+          4.35 %Comments
 
 McCabe Complexity Metric for file src/TestSuite.py
 ---------------------------------------------------
@@ -23,7 +23,7 @@ McCabe Complexity Metric for file src/TestSuite.py
 COCOMO 2's SLOC Metric for src/TestSuite.py
 --------------------------------------------
 
-         17    src/TestSuite.py
+         16    src/TestSuite.py
 
 
 *** Processed 1 module in run ***

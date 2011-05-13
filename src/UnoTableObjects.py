@@ -40,11 +40,7 @@ class UnoTable(Table):
                     print '%s plays a %s' % (self.players[self.current_player], move)
                     result = self.players[self.current_player].play_card(move, self.discard)
             else: #is Human
-                print '+==================================+\n| Cards in deck: %s' % len(self.deck.cards)
-                print '| Top of the discard pile: %s\n|' % self.discard.peek()
-                print '%s' % self.print_hand_count()
-                print '+==================================+\n'
-                print '***Your hand contains***\n%s\n' % self.players[self.current_player].hand
+                self.print_output_for_human()
                 move = raw_input('Please input your move, or draw:\n')
                 if move.lower().strip() == 'draw': #draw a card
                     self.players[self.current_player].draw_from(self.deck)
@@ -67,6 +63,7 @@ class UnoTable(Table):
             if len(player.hand) == 0:
                 return player
 
+    #gameplay helper functions
     def determine_next_turn(self, move):
         if 'Skip' in move:
             self.current_player = (self.current_player + 2 * self.TURN_CONS) % (len(self.players))
@@ -100,6 +97,9 @@ class UnoTable(Table):
             s += '| %s has %s cards in hand.\n' % (p, len(p.hand))
         return s.strip()
 
-
-
-
+    def print_output_for_human(self):
+        print '+==================================+\n| Cards in deck: %s' % len(self.deck.cards)
+        print '| Top of the discard pile: %s\n|' % self.discard.peek()
+        print '%s' % self.print_hand_count()
+        print '+==================================+\n'
+        print '***Your hand contains***\n%s\n' % self.players[self.current_player].hand

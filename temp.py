@@ -266,6 +266,22 @@ class GoFishTable(Table):
             if len(player.hand) == 0:
                 return True
         return False
+import unittest
+
+from UnoAIPlayerTests import *
+from UnoCardTests import *
+from UnoDeckTests import *
+from UnoHumanPlayerTests import *
+from UnoPlayerTests import *
+from UnoTableTests import *
+
+load = unittest.TestLoader().loadTestsFromTestCase
+
+suites = map(load, [TestUnoAIPlayer, TestUnoCard, TestUnoDeck, TestUnoHumanPlayer, TestUnoPlayer, TestUnoTable])
+
+alltests = unittest.TestSuite(suites)
+
+unittest.TextTestRunner(verbosity=1).run(alltests)
 from CardObjects import Card
 
 class UnoCard(Card):
@@ -773,22 +789,18 @@ from DeckTests import *
 from DiscardPileTests import *
 from PlayerTests import *
 from TableTests import *
+
 from GoFishTableTests import *
 from GoFishPlayerTests import *
 from GoFishHumanPlayerTests import *
 from GoFishAIPlayerTests import *
-
 from GoFishPlayerTests import *
 from GoFishTableTests import *
-
-#from SlapJackPlayerTests import *
-#from SlapJackTableTests import *
-
-from TwentyFourTests import *
+#from TwentyFourTests import *
 
 load = unittest.TestLoader().loadTestsFromTestCase
 
-suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishTable, TestGoFishPlayer, TestGoFishHumanPlayer, TestGoFishAIPlayer, TestTwentyFour])
+suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, TestGoFishTable, TestGoFishPlayer, TestGoFishHumanPlayer, TestGoFishAIPlayer])
 
 alltests = unittest.TestSuite(suites)
 
@@ -1192,8 +1204,6 @@ class UnoTable(Table):
         self.current_player = 0
         self.TURN_CONS = 1
 
-        self.play_game()
-
     def get_winner(self):
         return self.winner()
 
@@ -1214,11 +1224,7 @@ class UnoTable(Table):
                     print '%s plays a %s' % (self.players[self.current_player], move)
                     result = self.players[self.current_player].play_card(move, self.discard)
             else: #is Human
-                print '+==================================+\n| Cards in deck: %s' % len(self.deck.cards)
-                print '| Top of the discard pile: %s\n|' % self.discard.peek()
-                print '%s' % self.print_hand_count()
-                print '+==================================+\n'
-                print '***Your hand contains***\n%s\n' % self.players[self.current_player].hand
+                self.print_output_for_human()
                 move = raw_input('Please input your move, or draw:\n')
                 if move.lower().strip() == 'draw': #draw a card
                     self.players[self.current_player].draw_from(self.deck)
@@ -1241,6 +1247,7 @@ class UnoTable(Table):
             if len(player.hand) == 0:
                 return player
 
+    #gameplay helper functions
     def determine_next_turn(self, move):
         if 'Skip' in move:
             self.current_player = (self.current_player + 2 * self.TURN_CONS) % (len(self.players))
@@ -1274,9 +1281,12 @@ class UnoTable(Table):
             s += '| %s has %s cards in hand.\n' % (p, len(p.hand))
         return s.strip()
 
-
-
-
+    def print_output_for_human(self):
+        print '+==================================+\n| Cards in deck: %s' % len(self.deck.cards)
+        print '| Top of the discard pile: %s\n|' % self.discard.peek()
+        print '%s' % self.print_hand_count()
+        print '+==================================+\n'
+        print '***Your hand contains***\n%s\n' % self.players[self.current_player].hand
 import pygame
 from pygame.locals import *
 
