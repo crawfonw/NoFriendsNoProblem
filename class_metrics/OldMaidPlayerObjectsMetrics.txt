@@ -1,0 +1,59 @@
+=== File: src/OldMaidPlayerObjects.py ===
+Module src/OldMaidPlayerObjects.py is missing a module doc string. Detected at line 1
+
+In file src/OldMaidPlayerObjects.py, function OldMaidPlayer.check_discard has 3 extra exits at lines 16, 17, 19
+In file src/OldMaidPlayerObjects.py, function OldMaidPlayer.has_old_maid has 1 extra exit at line 24
+In file src/OldMaidPlayerObjects.py, function OldMaidPlayer.remove_card has 1 extra exit at line 31
+
+Basic Metrics for module src/OldMaidPlayerObjects.py
+----------------------------------------------------
+
+          5    maxBlockDepth
+         22    numBlocks
+       1463    numCharacters
+          1    numClasses
+          7    numFunctions
+         65    numKeywords
+         53    numLines
+          3    numMultipleExitFcns
+        535    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- OldMaidPlayer.__init__
+- OldMaidPlayer.check_discard
+- OldMaidPlayer.has_old_maid
+- OldMaidPlayer.print_hand
+- OldMaidPlayer.remove_card
+- OldMaidPlayer.remove_two
+- OldMaidPlayer.update_score
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- OldMaidPlayer
+
+
+McCabe Complexity Metric for file src/OldMaidPlayerObjects.py
+--------------------------------------------------------------
+
+          1    OldMaidPlayer.__init__
+          5    OldMaidPlayer.check_discard
+          3    OldMaidPlayer.has_old_maid
+          2    OldMaidPlayer.print_hand
+          3    OldMaidPlayer.remove_card
+          3    OldMaidPlayer.remove_two
+          2    OldMaidPlayer.update_score
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/OldMaidPlayerObjects.py
+-------------------------------------------------------
+
+         45    src/OldMaidPlayerObjects.py
+
+
+*** Processed 1 module in run ***

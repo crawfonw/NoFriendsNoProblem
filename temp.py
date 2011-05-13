@@ -252,7 +252,7 @@ class GoFishTable(Table):
     def play_turn(self, card_value=None):
         ret = ''
         others = self.players[0:self.current_player] + self.players[self.current_player+1:]
-        print "Player %s:" % self.current_player
+        print("Player %s:" % self.current_player)
         if self.players[self.current_player].player_type() == 1: #is AI
             ret = self.players[self.current_player].play_round(others, self.deck)
         else: #is Human
@@ -330,7 +330,7 @@ class GoFishAIPlayer(GoFishPlayer):
 
     def take_card(self, other, index):
         ret = "%s takes the %s from %s! The turn is over." % (self, other.hand[index], str(other))
-        print ret
+        print(ret)
         self.hand = self.hand + [other.hand[index]]
         other.hand = other.hand[0:index] + other.hand[index+1:]
         return ret
@@ -353,7 +353,7 @@ class GoFishAIPlayer(GoFishPlayer):
         else:
             self.draw_from(deck)
             ret = "%s asks if %s has any %s's, but must fish... Their turn is over." % (self, str(others[player]), value)
-            print ret
+            print(ret)
             return ret
 
 class Card(object):
@@ -595,13 +595,13 @@ class GoFishHumanPlayer(GoFishPlayer):
         return 0
 
     def print_hand(self):
-        print "Your hand contains: %s" % self.hand
+        print("Your hand contains: %s" % self.hand)
 
     def take_card(self, other, index):
         ret = "You take the %s!" % other.hand[index]
         self.hand = self.hand + [other.hand[index]]
         other.hand = other.hand[0:index] + other.hand[index+1:]
-        print ret
+        print(ret)
         return ret
 
     def draw_from(self, deck):
@@ -611,7 +611,7 @@ class GoFishHumanPlayer(GoFishPlayer):
             return ret
         except:
             ret = "The deck is empty!"
-            print ret
+            print(ret)
             return ret
 
     def play_round(self, card_value, others, player_id, deck):
@@ -621,7 +621,7 @@ class GoFishHumanPlayer(GoFishPlayer):
         else:
             ret = self.draw_from(deck)
             newret = "Go Fish! - %s" % ret
-            print newret
+            print(newret)
             return newret
 import random
 
@@ -805,12 +805,124 @@ suites = map(load, [TestCard, TestDeck, TestDiscardPile, TestPlayer, TestTable, 
 alltests = unittest.TestSuite(suites)
 
 unittest.TextTestRunner(verbosity=1).run(alltests)
+from PlayerObjects import Player
+from CardObjects import Card
+
+class OldMaidPlayer(Player):
+
+    def __init__(self):
+        self.hand = []
+
+    def check_discard(self):
+        card_values = [0 for i in range(13)]
+        for card in self.hand:
+            card_values[card.value - 1] = card_values[card.value - 1] + 1
+        try:
+            for i in range(13):
+                if card_values[i] > 1:
+                    return i+1
+            return -1
+        except:
+            return -1
+
+    def has_old_maid(self):
+        for card in self.hand:
+            if card.value == 0:
+                return True
+        return False
+
+    def remove_card(self, card):
+        for i in range(len(self.hand)):
+            if self.hand[i].same_as(card):
+                self.hand = self.hand[0:i] + self.hand[i+1:]
+                return
+
+    def remove_two(self, value):
+        i = 0
+        count = 0
+        while i < len(self.hand) and count < 2:
+            if self.hand[i].value == value:
+                self.hand.remove(self.hand[i])
+                i -= 1
+                count += 1
+            i += 1
+
+    def update_score(self):
+        two_of_a_kind = self.check_discard()
+        while two_of_a_kind > 0:
+            self.remove_two(two_of_a_kind)
+            print("You discard!")
+            two_of_a_kind = self.check_discard()
+
+    def print_hand(self):
+        print("Your hand contains:")
+        for card in self.hand:
+            print(card)
 from CardObjects import Card
 
 class Trick(object):
 
     def __init__(self):
         self.cards = []
+from TableObjects import Table
+from OldMaidPlayerObjects import OldMaidPlayer
+from DeckObjects import Deck
+from CardObjects import Card
+from random import randrange
+
+class OldMaidTable(Table):
+
+    def __init__(self, player_count=2):
+        self.players = []
+        self.deck = Deck()
+        self.deck.cards.append(Card(0, "Joker"))
+        self.deck.shuffle()
+        for i in range(player_count):
+            self.players.append(OldMaidPlayer())
+        self.deal_all()
+
+    def get_loser(self):
+        loser = -1
+        for i in range(len(self.players)):
+            if len(self.players[i].hand) != 0:
+                loser = i
+        return loser
+    
+    def play_game(self):
+        for i in range(len(self.players)):
+            self.players[i].update_score()
+        player = 0
+        while not self.winner():
+            if player == 0: #human
+                self.players[0].print_hand()
+                input("Taking a card from the player on your left...")
+                onleft = player - 1
+                while len(self.players[onleft].hand) == 0:
+                    onleft -= 1
+                card_taken = self.players[onleft].hand[randrange(len(self.players[onleft].hand))]
+                print("You take the {}".format(card_taken))
+                self.players[0].hand.append(card_taken)
+                self.players[onleft].remove_card(card_taken)
+            else: #inhuman
+                while len(self.players[onleft].hand) == 0:
+                    onleft -= 1
+                card_taken = self.players[onleft].hand[randrange(len(self.players[onleft].hand))]
+                if onleft != 0:
+                    print("Player {} takes a card".format(player))
+                else:
+                    print("Player {} takes your {}".format(player, card_taken))
+                self.players[player].hand.append(card_taken)
+                self.players[onleft].remove_card(card_taken)
+            self.players[player].update_score()
+            player = ((player + 1) % len(self.players))
+        print("Player {} loses!".format(self.get_loser()))
+
+    def winner(self):
+        count = 0
+        for player in self.players:
+            if len(player.hand) == 0:
+                count += 1
+        return count == (len(self.players) - 1)
 from DeckObjects import Deck
 
 class Player(object):
@@ -842,13 +954,12 @@ from CardObjects import Card
 class ERSPlayer(Player):
     
     def __init__(self):
-        pass
+        self.hand = []
 
     def flip(self):
-        pass
-
-    def slap(self, card):
-        pass
+        card = self.hand[-1]
+        self.hand = self.hand[:-1]
+        return card
 from pygamehelper import *
 from pygame import *
 from pygame.locals import *
@@ -1162,6 +1273,7 @@ from TableObjects import Table
 from ERSPlayerObjects import ERSPlayer
 from DiscardPileObjects import DiscardPile
 from DeckObjects import Deck
+from time import sleep
 
 class ERSTable(Table):
    
@@ -1175,13 +1287,54 @@ class ERSTable(Table):
         self.deal_all()
 
     def get_winner(self):
-        pass
+        for i in range(len(self.players)):
+            return i
 
     def play_game(self):
-        pass
+        player = 0
+        while not self.winner():
+            value = 0
+            if len(self.pile.cards) > 0:
+                value = self.pile.peek().value
+            if value == 1 or value > 10:
+                player = self.war(player)
+            else:
+                if player == 0:
+                    input("Play a card!")
+                card = self.players[player].flip()
+                print("Player {} plays the {}!".format(player, card))
+                self.pile.add(card)
+            self.wait_for_slap(0.25)
+            player = ((player + 1) % len(self.players))
+        print("Player {} wins!".format(self.get_winner()))
+
+    def wait_for_slap(self, t):
+        sleep(t)
+
+    def war(self, player):
+        value = self.pile.peek().value
+        num = 0
+        if value == 1:
+            num = 4
+        else:
+            num = value - 10
+        for i in range(num):
+            card = self.players[player].flip()
+            print("Player {} plays the {}!".format(player, card))
+            self.pile.add(card)
+            value = card.value
+            self.wait_for_slap(0.25)
+            if value == 1 or value > 10:
+                return player
+        self.players[player].cards = self.pile.cards + self.players[player].hand
+        self.pile.cards = []
+        return player - 1        
 
     def winner(self):
-        pass
+        for player in self.players:
+            if len(player.hand) == 0:
+                return True
+        return False
 from DiscardPileObjects import DiscardPile
 from TableObjects import Table
 

@@ -1,18 +1,22 @@
 === File: src/ERSTableObjects.py ===
 Module src/ERSTableObjects.py is missing a module doc string. Detected at line 1
 
+In file src/ERSTableObjects.py, function ERSTable.get_winner has 1 extra exit at line 20
+In file src/ERSTableObjects.py, function ERSTable.war has 1 extra exit at line 57
+In file src/ERSTableObjects.py, function ERSTable.winner has 1 extra exit at line 65
 
 Basic Metrics for module src/ERSTableObjects.py
 -----------------------------------------------
 
-          3    maxBlockDepth
-          7    numBlocks
-        547    numCharacters
+          5    maxBlockDepth
+         21    numBlocks
+       2040    numCharacters
           1    numClasses
-          4    numFunctions
-         28    numKeywords
-         24    numLines
-        186    numTokens
+          6    numFunctions
+         76    numKeywords
+         66    numLines
+          3    numMultipleExitFcns
+        699    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -21,6 +25,8 @@ Functions DocString present(+) or missing(-)
 - ERSTable.__init__
 - ERSTable.get_winner
 - ERSTable.play_game
+- ERSTable.wait_for_slap
+- ERSTable.war
 - ERSTable.winner
 
 
@@ -34,16 +40,18 @@ McCabe Complexity Metric for file src/ERSTableObjects.py
 ---------------------------------------------------------
 
           2    ERSTable.__init__
-          1    ERSTable.get_winner
-          1    ERSTable.play_game
-          1    ERSTable.winner
+          2    ERSTable.get_winner
+          6    ERSTable.play_game
+          1    ERSTable.wait_for_slap
+          5    ERSTable.war
+          3    ERSTable.winner
           1    __main__
 
 
 COCOMO 2's SLOC Metric for src/ERSTableObjects.py
 --------------------------------------------------
 
-         19    src/ERSTableObjects.py
+         59    src/ERSTableObjects.py
 
 
 *** Processed 1 module in run ***

@@ -9,13 +9,13 @@ Basic Metrics for module src/GoFishAIPlayerObjects.py
 
           3    maxBlockDepth
          14    numBlocks
-       1328    numCharacters
+       1330    numCharacters
           1    numClasses
           5    numFunctions
          43    numKeywords
          41    numLines
           2    numMultipleExitFcns
-        448    numTokens
+        450    numTokens
 
 
 Functions DocString present(+) or missing(-)

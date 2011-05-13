@@ -6,13 +6,13 @@ Basic Metrics for module src/ERSPlayerObjects.py
 ------------------------------------------------
 
           2    maxBlockDepth
-          5    numBlocks
-        204    numCharacters
+          4    numBlocks
+        245    numCharacters
           1    numClasses
-          3    numFunctions
+          2    numFunctions
          14    numKeywords
-         13    numLines
-         80    numTokens
+         12    numLines
+         99    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -20,7 +20,6 @@ Functions DocString present(+) or missing(-)
 
 - ERSPlayer.__init__
 - ERSPlayer.flip
-- ERSPlayer.slap
 
 
 Classes DocString present(+) or missing(-)
@@ -34,7 +33,6 @@ McCabe Complexity Metric for file src/ERSPlayerObjects.py
 
           1    ERSPlayer.__init__
           1    ERSPlayer.flip
-          1    ERSPlayer.slap
           1    __main__
 
 

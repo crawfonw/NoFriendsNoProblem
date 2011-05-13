@@ -9,13 +9,13 @@ Basic Metrics for module src/GoFishHumanPlayerObjects.py
 
           3    maxBlockDepth
          11    numBlocks
-       1072    numCharacters
+       1076    numCharacters
           1    numClasses
           5    numFunctions
          34    numKeywords
          36    numLines
           2    numMultipleExitFcns
-        349    numTokens
+        353    numTokens
 
 
 Functions DocString present(+) or missing(-)

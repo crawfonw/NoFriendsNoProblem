@@ -1,0 +1,53 @@
+=== File: src/OldMaidTableObjects.py ===
+Module src/OldMaidTableObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/OldMaidTableObjects.py
+---------------------------------------------------
+
+          5    maxBlockDepth
+         19    numBlocks
+       2270    numCharacters
+          1    numClasses
+          2    numComments
+          2    numCommentsInline
+          4    numFunctions
+         70    numKeywords
+         59    numLines
+        702    numTokens
+
+          3.39 %Comments
+          3.39 %CommentsInline
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- OldMaidTable.__init__
+- OldMaidTable.get_loser
+- OldMaidTable.play_game
+- OldMaidTable.winner
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- OldMaidTable
+
+
+McCabe Complexity Metric for file src/OldMaidTableObjects.py
+-------------------------------------------------------------
+
+          2    OldMaidTable.__init__
+          3    OldMaidTable.get_loser
+          9    OldMaidTable.play_game
+          3    OldMaidTable.winner
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/OldMaidTableObjects.py
+------------------------------------------------------
+
+         54    src/OldMaidTableObjects.py
+
+
+*** Processed 1 module in run ***

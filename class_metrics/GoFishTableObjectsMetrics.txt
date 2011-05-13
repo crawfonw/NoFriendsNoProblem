@@ -8,7 +8,7 @@ Basic Metrics for module src/GoFishTableObjects.py
 
           4    maxBlockDepth
          13    numBlocks
-       1673    numCharacters
+       1674    numCharacters
           1    numClasses
           3    numComments
           2    numCommentsInline
@@ -16,7 +16,7 @@ Basic Metrics for module src/GoFishTableObjects.py
          65    numKeywords
          44    numLines
           1    numMultipleExitFcns
-        525    numTokens
+        526    numTokens
 
           6.82 %Comments
           4.55 %CommentsInline
