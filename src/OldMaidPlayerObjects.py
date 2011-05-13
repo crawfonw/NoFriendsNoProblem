@@ -44,7 +44,7 @@ class OldMaidPlayer(Player):
         two_of_a_kind = self.check_discard()
         while two_of_a_kind > 0:
             self.remove_two(two_of_a_kind)
-            print("You discard!")
+            print("Discard!")
             two_of_a_kind = self.check_discard()
 
     def print_hand(self):

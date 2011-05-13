@@ -41,7 +41,7 @@ class OldMaidTable(Table):
                 while len(self.players[onleft].hand) == 0:
                     onleft -= 1
                 card_taken = self.players[onleft].hand[randrange(len(self.players[onleft].hand))]
-                if onleft != 0:
+                if (onleft%len(self.players)) != 0:
                     print("Player {} takes a card".format(player))
                 else:
                     print("Player {} takes your {}".format(player, card_taken))
