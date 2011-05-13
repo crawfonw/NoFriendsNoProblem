@@ -2,7 +2,7 @@ import unittest
 
 from UnoTableObjects import UnoTable
 
-class UnoTableTests(unittest.TestCase):
+class TestUnoTable(unittest.TestCase):
 
     def setUp(self):
         self.table = UnoTable(2)

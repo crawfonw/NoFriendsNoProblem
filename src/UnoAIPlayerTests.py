@@ -5,7 +5,7 @@ from DiscardPileObjects import DiscardPile
 from UnoCardObjects import UnoCard
 from UnoAIPlayerObjects import AIUnoPlayer
 
-class TestUnoHumanPlayer(unittest.TestCase):
+class TestUnoAIPlayer(unittest.TestCase):
 
     def setUp(self):
         self.player = AIUnoPlayer()

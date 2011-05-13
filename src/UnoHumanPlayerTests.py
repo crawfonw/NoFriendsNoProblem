@@ -31,8 +31,7 @@ class TestUnoHumanPlayer(unittest.TestCase):
         self.discard.cards = [UnoCard(0, 'Number', 'Yellow')]
         self.player.play_card(str(self.player.hand[0]), self.discard)
         self.assertTrue(self.player.hand_is_empty())
-        self.discard.cards
-        self.assertEqual(str(self.discard.peek()), str(UnoCard(-1, 'Wild', 'Red')))
+        self.assertEqual(str(self.discard.peek()), str(UnoCard(-1, 'Wild', 'Black')))
 
     def test_invalid_move(self):
         self.player.hand = [UnoCard(0, 'Number', 'Yellow')]

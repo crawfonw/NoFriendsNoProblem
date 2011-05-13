@@ -20,8 +20,6 @@ class UnoTable(Table):
         self.current_player = 0
         self.TURN_CONS = 1
 
-        self.play_game()
-
     def get_winner(self):
         return self.winner()
 

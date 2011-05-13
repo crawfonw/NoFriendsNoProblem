@@ -4,15 +4,19 @@ import os
 
 files = []
 
+temp = open('temp.py', 'w')
+
 for tup in os.walk('%s/src' % os.getcwd()):
     for elem in tup[2]:
         if elem.endswith('.py') and not elem.endswith('Tests.py'):
+            t = open('%s/src/%s' % (os.getcwd(), elem), 'r')
+            temp.writelines(t.readlines())
+            t.close()
             files.append('%s' % elem)
 
-l = ''
+os.popen('./pymetrics -S -C -f temp.py > class_metrics/AllMetrics.txt')
 
+l = ''
 for f in files:
     l += 'src/%s ' % f
     os.popen('./pymetrics -S -C src/%s > class_metrics/%sMetrics.txt' % (f, f.strip('.py')))
-
-#    os.popen('./pymetrics -S -C -f %s > class_metrics/AllMetrics.txt' % l)
