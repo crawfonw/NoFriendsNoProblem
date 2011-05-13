@@ -1,20 +1,22 @@
 === File: src/DiscardPileObjects.py ===
-Module src/DiscardPileObjects.py is missing a module doc string. Detected at line 2
+Module src/DiscardPileObjects.py is missing a module doc string. Detected at line 1
 
-In file src/DiscardPileObjects.py, function DiscardPile.peek has 1 extra exit at line 14
+In file src/DiscardPileObjects.py, function DiscardPile.peek has 1 extra exit at line 13
+In file src/DiscardPileObjects.py, function DiscardPile.has_double has 2 extra exits at lines 17, 20
+In file src/DiscardPileObjects.py, function DiscardPile.has_sandwich has 2 extra exits at lines 24, 27
 
 Basic Metrics for module src/DiscardPileObjects.py
 --------------------------------------------------
 
           3    maxBlockDepth
-          6    numBlocks
-        254    numCharacters
+         12    numBlocks
+        691    numCharacters
           1    numClasses
-          3    numFunctions
-         15    numKeywords
-         14    numLines
-          1    numMultipleExitFcns
-        113    numTokens
+          5    numFunctions
+         43    numKeywords
+         27    numLines
+          3    numMultipleExitFcns
+        291    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -22,6 +24,8 @@ Functions DocString present(+) or missing(-)
 
 - DiscardPile.__init__
 - DiscardPile.add
+- DiscardPile.has_double
+- DiscardPile.has_sandwich
 - DiscardPile.peek
 
 
@@ -36,6 +40,8 @@ McCabe Complexity Metric for file src/DiscardPileObjects.py
 
           1    DiscardPile.__init__
           1    DiscardPile.add
+          3    DiscardPile.has_double
+          3    DiscardPile.has_sandwich
           2    DiscardPile.peek
           1    __main__
 
@@ -43,7 +49,7 @@ McCabe Complexity Metric for file src/DiscardPileObjects.py
 COCOMO 2's SLOC Metric for src/DiscardPileObjects.py
 -----------------------------------------------------
 
-          9    src/DiscardPileObjects.py
+         21    src/DiscardPileObjects.py
 
 
 *** Processed 1 module in run ***

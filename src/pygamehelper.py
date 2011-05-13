@@ -81,4 +81,3 @@ class PygameHelper:
         
     def mouseMotion(self, buttons, pos, rel):
         pass
-        

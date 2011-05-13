@@ -1,4 +1,3 @@
-
 from DeckObjects import Deck
 
 class DiscardPile(Deck):

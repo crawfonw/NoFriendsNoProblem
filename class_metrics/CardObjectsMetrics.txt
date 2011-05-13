@@ -1,22 +1,22 @@
 === File: src/CardObjects.py ===
 Module src/CardObjects.py is missing a module doc string. Detected at line 2
 
-In file src/CardObjects.py, function Card.__str__ has 2 extra exits at lines 18, 20
-In file src/CardObjects.py, function Card.get_name has 6 extra exits at lines 26, 28, 30, 32, 34, 36
-In file src/CardObjects.py, function Card.__lt__ has 2 extra exits at lines 45, 47
+In file src/CardObjects.py, function Card.__str__ has 2 extra exits at lines 17, 19
+In file src/CardObjects.py, function Card.get_name has 6 extra exits at lines 25, 27, 29, 31, 33, 35
+In file src/CardObjects.py, function Card.__lt__ has 2 extra exits at lines 44, 46
 
 Basic Metrics for module src/CardObjects.py
 -------------------------------------------
 
           4    maxBlockDepth
          22    numBlocks
-       1194    numCharacters
+       1184    numCharacters
           1    numClasses
           5    numFunctions
          61    numKeywords
-         47    numLines
+         46    numLines
           3    numMultipleExitFcns
-        444    numTokens
+        441    numTokens
 
 
 Functions DocString present(+) or missing(-)

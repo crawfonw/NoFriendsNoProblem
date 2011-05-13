@@ -1,0 +1,43 @@
+=== File: src/UnoDeckObjects.py ===
+Module src/UnoDeckObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/UnoDeckObjects.py
+----------------------------------------------
+
+          5    maxBlockDepth
+          9    numBlocks
+        697    numCharacters
+          1    numClasses
+          1    numFunctions
+         25    numKeywords
+         22    numLines
+        255    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- UnoDeck.__init__
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- UnoDeck
+
+
+McCabe Complexity Metric for file src/UnoDeckObjects.py
+--------------------------------------------------------
+
+          7    UnoDeck.__init__
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/UnoDeckObjects.py
+-------------------------------------------------
+
+         18    src/UnoDeckObjects.py
+
+
+*** Processed 1 module in run ***

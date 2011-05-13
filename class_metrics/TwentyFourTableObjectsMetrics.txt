@@ -1,33 +1,39 @@
 === File: src/TwentyFourTableObjects.py ===
 Module src/TwentyFourTableObjects.py is missing a module doc string. Detected at line 1
 
-In file src/TwentyFourTableObjects.py, function TwentyFourTable.winner has 2 extra exits at lines 99, 101
+In file src/TwentyFourTableObjects.py, function TwentyFourTable.is_legal_guess has 2 extra exits at lines 131, 135
+In file src/TwentyFourTableObjects.py, function TwentyFourTable.find_solution has 1 extra exit at line 150
+In file src/TwentyFourTableObjects.py, function TwentyFourTable.winner has 2 extra exits at lines 160, 162
 
 Basic Metrics for module src/TwentyFourTableObjects.py
 ------------------------------------------------------
 
-          4    maxBlockDepth
-         27    numBlocks
-       3256    numCharacters
-          1    numClasses
-          2    numComments
-         10    numFunctions
-        126    numKeywords
-        105    numLines
-          1    numMultipleExitFcns
-       1042    numTokens
+          6    maxBlockDepth
+         44    numBlocks
+       5618    numCharacters
+          2    numClasses
+         13    numComments
+          1    numCommentsInline
+         12    numFunctions
+        173    numKeywords
+        166    numLines
+          3    numMultipleExitFcns
+       1548    numTokens
 
-          1.90 %Comments
+          7.83 %Comments
+          0.60 %CommentsInline
 
 Functions DocString present(+) or missing(-)
 --------------------------------------------
 
 - TwentyFourTable.__init__
 - TwentyFourTable.buzz_in
+- TwentyFourTable.find_solution
 - TwentyFourTable.is_correct_guess
-- TwentyFourTable.is_solvable
+- TwentyFourTable.is_legal_guess
 - TwentyFourTable.is_valid_guess
 - TwentyFourTable.play_game
+- TwentyFourTable.play_game.timeout_handler
 - TwentyFourTable.play_round
 - TwentyFourTable.return_cards
 - TwentyFourTable.solve
@@ -37,6 +43,7 @@ Functions DocString present(+) or missing(-)
 Classes DocString present(+) or missing(-)
 ------------------------------------------
 
+- TimeoutException
 - TwentyFourTable
 
 
@@ -45,10 +52,12 @@ McCabe Complexity Metric for file src/TwentyFourTableObjects.py
 
           2    TwentyFourTable.__init__
           1    TwentyFourTable.buzz_in
+          5    TwentyFourTable.find_solution
           1    TwentyFourTable.is_correct_guess
-          1    TwentyFourTable.is_solvable
+          9    TwentyFourTable.is_legal_guess
           1    TwentyFourTable.is_valid_guess
-         13    TwentyFourTable.play_game
+         20    TwentyFourTable.play_game
+          1    TwentyFourTable.play_game.timeout_handler
           1    TwentyFourTable.play_round
           1    TwentyFourTable.return_cards
           1    TwentyFourTable.solve
@@ -59,7 +68,7 @@ McCabe Complexity Metric for file src/TwentyFourTableObjects.py
 COCOMO 2's SLOC Metric for src/TwentyFourTableObjects.py
 ---------------------------------------------------------
 
-         80    src/TwentyFourTableObjects.py
+         46    src/TwentyFourTableObjects.py
 
 
 *** Processed 1 module in run ***

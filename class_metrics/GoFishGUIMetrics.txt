@@ -7,7 +7,7 @@ Basic Metrics for module src/GoFishGUI.py
 
           7    maxBlockDepth
          53    numBlocks
-       9143    numCharacters
+       9145    numCharacters
           1    numClasses
          15    numComments
           6    numCommentsInline
@@ -22,57 +22,57 @@ Basic Metrics for module src/GoFishGUI.py
 Functions DocString present(+) or missing(-)
 --------------------------------------------
 
-- DrawDemo.__init__
-- DrawDemo.check_draw_click
-- DrawDemo.click_is_in
-- DrawDemo.click_is_in_hand
-- DrawDemo.draw
-- DrawDemo.draw_all
-- DrawDemo.draw_card
-- DrawDemo.draw_deck
-- DrawDemo.draw_deck_label
-- DrawDemo.draw_hand
-- DrawDemo.draw_hand_area
-- DrawDemo.draw_message
-- DrawDemo.draw_score
-- DrawDemo.draw_selected_player
-- DrawDemo.draw_turn_button
-- DrawDemo.draw_turn_label
-- DrawDemo.keyUp
-- DrawDemo.mouseMotion
-- DrawDemo.mouseUp
-- DrawDemo.update
+- GoFishGUI.__init__
+- GoFishGUI.check_draw_click
+- GoFishGUI.click_is_in
+- GoFishGUI.click_is_in_hand
+- GoFishGUI.draw
+- GoFishGUI.draw_all
+- GoFishGUI.draw_card
+- GoFishGUI.draw_deck
+- GoFishGUI.draw_deck_label
+- GoFishGUI.draw_hand
+- GoFishGUI.draw_hand_area
+- GoFishGUI.draw_message
+- GoFishGUI.draw_score
+- GoFishGUI.draw_selected_player
+- GoFishGUI.draw_turn_button
+- GoFishGUI.draw_turn_label
+- GoFishGUI.keyUp
+- GoFishGUI.mouseMotion
+- GoFishGUI.mouseUp
+- GoFishGUI.update
 
 
 Classes DocString present(+) or missing(-)
 ------------------------------------------
 
-- DrawDemo
+- GoFishGUI
 
 
 McCabe Complexity Metric for file src/GoFishGUI.py
 ---------------------------------------------------
 
-          2    DrawDemo.__init__
-          2    DrawDemo.check_draw_click
-          1    DrawDemo.click_is_in
-          7    DrawDemo.click_is_in_hand
-          1    DrawDemo.draw
-          1    DrawDemo.draw_all
-          6    DrawDemo.draw_card
-          1    DrawDemo.draw_deck
-          1    DrawDemo.draw_deck_label
-          2    DrawDemo.draw_hand
-          1    DrawDemo.draw_hand_area
-          1    DrawDemo.draw_message
-          2    DrawDemo.draw_score
-          3    DrawDemo.draw_selected_player
-          1    DrawDemo.draw_turn_button
-          1    DrawDemo.draw_turn_label
-          4    DrawDemo.keyUp
-          1    DrawDemo.mouseMotion
-         12    DrawDemo.mouseUp
-          1    DrawDemo.update
+          2    GoFishGUI.__init__
+          2    GoFishGUI.check_draw_click
+          1    GoFishGUI.click_is_in
+          7    GoFishGUI.click_is_in_hand
+          1    GoFishGUI.draw
+          1    GoFishGUI.draw_all
+          6    GoFishGUI.draw_card
+          1    GoFishGUI.draw_deck
+          1    GoFishGUI.draw_deck_label
+          2    GoFishGUI.draw_hand
+          1    GoFishGUI.draw_hand_area
+          1    GoFishGUI.draw_message
+          2    GoFishGUI.draw_score
+          3    GoFishGUI.draw_selected_player
+          1    GoFishGUI.draw_turn_button
+          1    GoFishGUI.draw_turn_label
+          4    GoFishGUI.keyUp
+          1    GoFishGUI.mouseMotion
+         12    GoFishGUI.mouseUp
+          1    GoFishGUI.update
           1    __main__
 
 

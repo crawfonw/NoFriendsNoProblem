@@ -1,0 +1,27 @@
+=== File: src/UnoTestSuite.py ===
+Module src/UnoTestSuite.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/UnoTestSuite.py
+--------------------------------------------
+
+          1    numBlocks
+        450    numCharacters
+         13    numKeywords
+         16    numLines
+        129    numTokens
+
+
+McCabe Complexity Metric for file src/UnoTestSuite.py
+------------------------------------------------------
+
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/UnoTestSuite.py
+-----------------------------------------------
+
+         11    src/UnoTestSuite.py
+
+
+*** Processed 1 module in run ***

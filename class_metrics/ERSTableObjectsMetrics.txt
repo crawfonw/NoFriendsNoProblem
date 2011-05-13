@@ -1,0 +1,49 @@
+=== File: src/ERSTableObjects.py ===
+Module src/ERSTableObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/ERSTableObjects.py
+-----------------------------------------------
+
+          3    maxBlockDepth
+          7    numBlocks
+        547    numCharacters
+          1    numClasses
+          4    numFunctions
+         28    numKeywords
+         24    numLines
+        186    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- ERSTable.__init__
+- ERSTable.get_winner
+- ERSTable.play_game
+- ERSTable.winner
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- ERSTable
+
+
+McCabe Complexity Metric for file src/ERSTableObjects.py
+---------------------------------------------------------
+
+          2    ERSTable.__init__
+          1    ERSTable.get_winner
+          1    ERSTable.play_game
+          1    ERSTable.winner
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/ERSTableObjects.py
+--------------------------------------------------
+
+         19    src/ERSTableObjects.py
+
+
+*** Processed 1 module in run ***

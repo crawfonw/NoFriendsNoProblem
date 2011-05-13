@@ -4,9 +4,8 @@ from TwentyFourDeckObjects import TwentyFourDeck
 from TrickObjects import Trick
 import compiler
 import itertools
-import sys
-import signal
-from select import select
+import msvcrt
+import time
 
 class TimeoutException(Exception):
     pass
@@ -22,6 +21,8 @@ class TwentyFourTable(Table):
         self.deck = TwentyFourDeck()
         self.deck.shuffle()
         self.deal(20)
+
+        self.timeout = 10       # lower timeout implies higher difficulty
 
     def play_game(self):
         def timeout_handler(signum, frame):
@@ -41,32 +42,38 @@ class TwentyFourTable(Table):
             print('Make 24 out of these cards:')
             print('   {}'.format(self.trick.cards))
 
-            # signal.signal(signal.SIGALRM, timeout_handler)
-            # signal.alarm(3)
+            print('Press any key to buzz in...')
+            start_time = time.time()
 
-            try:
-                print('Which player buzzes in?')
-                self.buzz_in(int(raw_input('> ')))
-            except TimeoutException:
-                print("Time's up!")
-            except Exception:
-                print('Invalid input.')
-                continue
+            while True:
+                if msvcrt.kbhit():
+                    print 'Human player buzzed in!'
+                    self.buzz_in(0)
+                    break
+                else:
+                    if time.time() - start_time > self.timeout:
+                        print 'Computer player buzzed in!'
+                        self.buzz_in(1)
+                        break
 
+            # shouldn't happen with new buzzing system, but just in case...
             if self.buzzed_in != 0 and self.buzzed_in != 1:
                 print('Invalid input.')
                 continue
 
-            print('What is player {}\'s guess?'.format(self.buzzed_in))
-            guess = raw_input('> ')
+            if self.buzzed_in == 0:
+                print('What is your guess?')
+                guess = raw_input('> ')
 
-            if not self.is_valid_guess(guess):
-                print('Guess is invalid!')
-                continue
+                if not self.is_valid_guess(guess):
+                    print('Guess is invalid!')
+                    continue
 
-            if not self.is_correct_guess(guess):
-                print('That doesn\'t make 24!')
-                continue
+                if not self.is_correct_guess(guess):
+                    print('That doesn\'t make 24!')
+                    continue
+            elif self.buzzed_in == 1:
+                print 'The computer guessed {}.'.format(self.find_solution())
 
             print('Player {} is correct!'.format(self.buzzed_in))
             self.solve(self.buzzed_in)
@@ -91,6 +98,7 @@ class TwentyFourTable(Table):
         self.buzzed_in = player_num
 
     # Test for syntactical correctness.
+    # FIXME: Some valid formulae are throwing false negatives.
     def is_valid_guess(self, guess):
         is_valid = True
 
@@ -131,6 +139,7 @@ class TwentyFourTable(Table):
     def is_correct_guess(self, guess):
         return eval(guess) == 24
 
+    # FIXME: eliminate integer division from solutions.
     def find_solution(self):
         for c in itertools.permutations(self.trick.cards):
             for o in itertools.permutations(["+", "-", "*", "/"]):

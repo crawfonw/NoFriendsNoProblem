@@ -1,0 +1,47 @@
+=== File: src/ERSPlayerObjects.py ===
+Module src/ERSPlayerObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/ERSPlayerObjects.py
+------------------------------------------------
+
+          2    maxBlockDepth
+          5    numBlocks
+        204    numCharacters
+          1    numClasses
+          3    numFunctions
+         14    numKeywords
+         13    numLines
+         80    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- ERSPlayer.__init__
+- ERSPlayer.flip
+- ERSPlayer.slap
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- ERSPlayer
+
+
+McCabe Complexity Metric for file src/ERSPlayerObjects.py
+----------------------------------------------------------
+
+          1    ERSPlayer.__init__
+          1    ERSPlayer.flip
+          1    ERSPlayer.slap
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/ERSPlayerObjects.py
+---------------------------------------------------
+
+          9    src/ERSPlayerObjects.py
+
+
+*** Processed 1 module in run ***

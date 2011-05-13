@@ -1,20 +1,20 @@
 === File: src/TableObjects.py ===
 Module src/TableObjects.py is missing a module doc string. Detected at line 1
 
-In file src/TableObjects.py, function Table.winner has 2 extra exits at lines 38, 40
+In file src/TableObjects.py, function Table.winner has 2 extra exits at lines 44, 46
 
 Basic Metrics for module src/TableObjects.py
 --------------------------------------------
 
           4    maxBlockDepth
-         15    numBlocks
-       1237    numCharacters
+         17    numBlocks
+       1429    numCharacters
           1    numClasses
-          4    numFunctions
-         61    numKeywords
-         42    numLines
+          5    numFunctions
+         68    numKeywords
+         48    numLines
           1    numMultipleExitFcns
-        446    numTokens
+        522    numTokens
 
 
 Functions DocString present(+) or missing(-)
@@ -22,6 +22,7 @@ Functions DocString present(+) or missing(-)
 
 - Table.__init__
 - Table.deal
+- Table.deal_all
 - Table.play_game
 - Table.winner
 
@@ -37,6 +38,7 @@ McCabe Complexity Metric for file src/TableObjects.py
 
           2    Table.__init__
           4    Table.deal
+          2    Table.deal_all
           3    Table.play_game
           4    Table.winner
           1    __main__
@@ -45,7 +47,7 @@ McCabe Complexity Metric for file src/TableObjects.py
 COCOMO 2's SLOC Metric for src/TableObjects.py
 -----------------------------------------------
 
-         34    src/TableObjects.py
+         39    src/TableObjects.py
 
 
 *** Processed 1 module in run ***

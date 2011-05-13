@@ -1,0 +1,49 @@
+=== File: src/UnoCardObjects.py ===
+Module src/UnoCardObjects.py is missing a module doc string. Detected at line 1
+
+In file src/UnoCardObjects.py, function UnoCard.__str__ has 4 extra exits at lines 17, 20, 22, 24
+
+Basic Metrics for module src/UnoCardObjects.py
+----------------------------------------------
+
+          4    maxBlockDepth
+         14    numBlocks
+       1026    numCharacters
+          1    numClasses
+          3    numFunctions
+         49    numKeywords
+         32    numLines
+          1    numMultipleExitFcns
+        360    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- UnoCard.__init__
+- UnoCard.__str__
+- UnoCard.set_color_of_wild
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- UnoCard
+
+
+McCabe Complexity Metric for file src/UnoCardObjects.py
+--------------------------------------------------------
+
+          3    UnoCard.__init__
+          6    UnoCard.__str__
+          3    UnoCard.set_color_of_wild
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/UnoCardObjects.py
+-------------------------------------------------
+
+         27    src/UnoCardObjects.py
+
+
+*** Processed 1 module in run ***

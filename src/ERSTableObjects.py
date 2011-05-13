@@ -11,7 +11,6 @@ class ERSTable(Table):
         self.deck = Deck()
         self.pile = DiscardPile()
         self.deck.shuffle()
-        self.slapped = False
         for i in range(player_count):
             self.players.append(ERSPlayer())
         self.deal_all()

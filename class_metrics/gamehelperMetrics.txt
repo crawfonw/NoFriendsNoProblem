@@ -7,17 +7,17 @@ Basic Metrics for module src/pygamehelper.py
 
           5    maxBlockDepth
          27    numBlocks
-       2500    numCharacters
+       2407    numCharacters
           1    numClasses
           4    numComments
           1    numCommentsInline
          12    numFunctions
          73    numKeywords
-         84    numLines
-        830    numTokens
+         83    numLines
+        828    numTokens
 
-          4.76 %Comments
-          1.19 %CommentsInline
+          4.82 %Comments
+          1.20 %CommentsInline
 
 Functions DocString present(+) or missing(-)
 --------------------------------------------
