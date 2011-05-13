@@ -15,12 +15,14 @@ class HumanUnoPlayer(UnoPlayer):
         ret = False
         index = self.card_index_in_hand(card_str)
         if index == -1:
-            print 'That card is not in your hand!'
+            pass
+            #print 'That card is not in your hand!'
         elif self.is_valid_move(self.hand[index], pile.peek()):
             pile.add(self.hand[index])
             self.hand = self.hand[:index] + self.hand[index + 1:]
             ret = True
         else:
-            print 'That is not a valid move!'
+            pass
+            #print 'That is not a valid move!'
 
         return ret
