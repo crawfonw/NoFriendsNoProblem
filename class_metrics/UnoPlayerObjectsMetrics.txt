@@ -1,0 +1,49 @@
+=== File: src/UnoPlayerObjects.py ===
+Module src/UnoPlayerObjects.py is missing a module doc string. Detected at line 1
+
+
+Basic Metrics for module src/UnoPlayerObjects.py
+------------------------------------------------
+
+          3    maxBlockDepth
+          7    numBlocks
+        740    numCharacters
+          1    numClasses
+          4    numFunctions
+         28    numKeywords
+         24    numLines
+        253    numTokens
+
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- UnoPlayer.hand_is_empty
+- UnoPlayer.is_valid_move
+- UnoPlayer.play_card
+- UnoPlayer.print_hand
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- UnoPlayer
+
+
+McCabe Complexity Metric for file src/UnoPlayerObjects.py
+----------------------------------------------------------
+
+          1    UnoPlayer.hand_is_empty
+          1    UnoPlayer.is_valid_move
+          1    UnoPlayer.play_card
+          2    UnoPlayer.print_hand
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/UnoPlayerObjects.py
+---------------------------------------------------
+
+         19    src/UnoPlayerObjects.py
+
+
+*** Processed 1 module in run ***

@@ -1,0 +1,61 @@
+=== File: src/UnoTableObjects.py ===
+Module src/UnoTableObjects.py is missing a module doc string. Detected at line 1
+
+In file src/UnoTableObjects.py, function UnoTable.winner has 1 extra exit at line 70
+
+Basic Metrics for module src/UnoTableObjects.py
+-----------------------------------------------
+
+          6    maxBlockDepth
+         32    numBlocks
+       4751    numCharacters
+          1    numClasses
+          4    numComments
+          4    numCommentsInline
+          7    numFunctions
+        171    numKeywords
+        107    numLines
+          1    numMultipleExitFcns
+       1339    numTokens
+
+          3.74 %Comments
+          3.74 %CommentsInline
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- UnoTable.__init__
+- UnoTable.determine_next_turn
+- UnoTable.get_winner
+- UnoTable.play_game
+- UnoTable.print_hand_count
+- UnoTable.shuffle_and_turn
+- UnoTable.winner
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- UnoTable
+
+
+McCabe Complexity Metric for file src/UnoTableObjects.py
+---------------------------------------------------------
+
+          2    UnoTable.__init__
+          8    UnoTable.determine_next_turn
+          1    UnoTable.get_winner
+         13    UnoTable.play_game
+          2    UnoTable.print_hand_count
+          1    UnoTable.shuffle_and_turn
+          3    UnoTable.winner
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/UnoTableObjects.py
+--------------------------------------------------
+
+         92    src/UnoTableObjects.py
+
+
+*** Processed 1 module in run ***

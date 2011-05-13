@@ -15,4 +15,4 @@ for f in files:
     l += 'src/%s ' % f
     os.popen('./pymetrics -S -C src/%s > class_metrics/%sMetrics.txt' % (f, f.strip('.py')))
 
-    os.popen('./pymetrics -S -C -f %s > class_metrics/AllMetrics.txt' % l)
+#    os.popen('./pymetrics -S -C -f %s > class_metrics/AllMetrics.txt' % l)

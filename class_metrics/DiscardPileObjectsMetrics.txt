@@ -1,22 +1,22 @@
 === File: src/DiscardPileObjects.py ===
-Module src/DiscardPileObjects.py is missing a module doc string. Detected at line 2
+Module src/DiscardPileObjects.py is missing a module doc string. Detected at line 1
 
-In file src/DiscardPileObjects.py, function DiscardPile.peek has 1 extra exit at line 14
-In file src/DiscardPileObjects.py, function DiscardPile.has_double has 2 extra exits at lines 18, 21
-In file src/DiscardPileObjects.py, function DiscardPile.has_sandwich has 2 extra exits at lines 25, 28
+In file src/DiscardPileObjects.py, function DiscardPile.peek has 1 extra exit at line 13
+In file src/DiscardPileObjects.py, function DiscardPile.has_double has 2 extra exits at lines 17, 20
+In file src/DiscardPileObjects.py, function DiscardPile.has_sandwich has 2 extra exits at lines 24, 27
 
 Basic Metrics for module src/DiscardPileObjects.py
 --------------------------------------------------
 
           3    maxBlockDepth
          12    numBlocks
-        692    numCharacters
+        691    numCharacters
           1    numClasses
           5    numFunctions
          43    numKeywords
-         28    numLines
+         27    numLines
           3    numMultipleExitFcns
-        293    numTokens
+        291    numTokens
 
 
 Functions DocString present(+) or missing(-)

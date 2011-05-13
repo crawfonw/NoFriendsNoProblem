@@ -1,0 +1,51 @@
+=== File: src/UnoHumanPlayerObjects.py ===
+Module src/UnoHumanPlayerObjects.py is missing a module doc string. Detected at line 1
+
+In file src/UnoHumanPlayerObjects.py, function HumanUnoPlayer.card_index_in_hand has 1 extra exit at line 11
+
+Basic Metrics for module src/UnoHumanPlayerObjects.py
+-----------------------------------------------------
+
+          4    maxBlockDepth
+         10    numBlocks
+        778    numCharacters
+          1    numClasses
+          2    numComments
+          3    numFunctions
+         29    numKeywords
+         28    numLines
+          1    numMultipleExitFcns
+        251    numTokens
+
+          7.14 %Comments
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- HumanUnoPlayer.card_index_in_hand
+- HumanUnoPlayer.play_card
+- HumanUnoPlayer.player_type
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- HumanUnoPlayer
+
+
+McCabe Complexity Metric for file src/UnoHumanPlayerObjects.py
+---------------------------------------------------------------
+
+          3    HumanUnoPlayer.card_index_in_hand
+          4    HumanUnoPlayer.play_card
+          1    HumanUnoPlayer.player_type
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/UnoHumanPlayerObjects.py
+--------------------------------------------------------
+
+         21    src/UnoHumanPlayerObjects.py
+
+
+*** Processed 1 module in run ***

@@ -1,25 +1,27 @@
 === File: src/TwentyFourTableObjects.py ===
 Module src/TwentyFourTableObjects.py is missing a module doc string. Detected at line 1
 
-In file src/TwentyFourTableObjects.py, function TwentyFourTable.is_legal_guess has 2 extra exits at lines 123, 127
-In file src/TwentyFourTableObjects.py, function TwentyFourTable.find_solution has 1 extra exit at line 141
-In file src/TwentyFourTableObjects.py, function TwentyFourTable.winner has 2 extra exits at lines 151, 153
+In file src/TwentyFourTableObjects.py, function TwentyFourTable.is_legal_guess has 2 extra exits at lines 131, 135
+In file src/TwentyFourTableObjects.py, function TwentyFourTable.find_solution has 1 extra exit at line 150
+In file src/TwentyFourTableObjects.py, function TwentyFourTable.winner has 2 extra exits at lines 160, 162
 
 Basic Metrics for module src/TwentyFourTableObjects.py
 ------------------------------------------------------
 
-          5    maxBlockDepth
-         41    numBlocks
-       5122    numCharacters
+          6    maxBlockDepth
+         44    numBlocks
+       5618    numCharacters
           2    numClasses
-         11    numComments
+         13    numComments
+          1    numCommentsInline
          12    numFunctions
-        165    numKeywords
-        157    numLines
+        173    numKeywords
+        166    numLines
           3    numMultipleExitFcns
-       1465    numTokens
+       1548    numTokens
 
-          7.01 %Comments
+          7.83 %Comments
+          0.60 %CommentsInline
 
 Functions DocString present(+) or missing(-)
 --------------------------------------------
@@ -54,7 +56,7 @@ McCabe Complexity Metric for file src/TwentyFourTableObjects.py
           1    TwentyFourTable.is_correct_guess
           9    TwentyFourTable.is_legal_guess
           1    TwentyFourTable.is_valid_guess
-         13    TwentyFourTable.play_game
+         20    TwentyFourTable.play_game
           1    TwentyFourTable.play_game.timeout_handler
           1    TwentyFourTable.play_round
           1    TwentyFourTable.return_cards
@@ -66,7 +68,7 @@ McCabe Complexity Metric for file src/TwentyFourTableObjects.py
 COCOMO 2's SLOC Metric for src/TwentyFourTableObjects.py
 ---------------------------------------------------------
 
-        116    src/TwentyFourTableObjects.py
+         46    src/TwentyFourTableObjects.py
 
 
 *** Processed 1 module in run ***

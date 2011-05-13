@@ -1,0 +1,63 @@
+=== File: src/UnoAIPlayerObjects.py ===
+Module src/UnoAIPlayerObjects.py is missing a module doc string. Detected at line 1
+
+In file src/UnoAIPlayerObjects.py, function AIUnoPlayer.card_index_in_hand has 1 extra exit at line 13
+In file src/UnoAIPlayerObjects.py, function AIUnoPlayer.find_correct_color_card_combination has 1 extra exit at line 76
+In file src/UnoAIPlayerObjects.py, function AIUnoPlayer.find_max_colors has 1 extra exit at line 110
+
+Basic Metrics for module src/UnoAIPlayerObjects.py
+--------------------------------------------------
+
+          5    maxBlockDepth
+         47    numBlocks
+       4399    numCharacters
+          1    numClasses
+          6    numComments
+          6    numCommentsInline
+          7    numFunctions
+        105    numKeywords
+        111    numLines
+          3    numMultipleExitFcns
+       1463    numTokens
+
+          5.41 %Comments
+          5.41 %CommentsInline
+
+Functions DocString present(+) or missing(-)
+--------------------------------------------
+
+- AIUnoPlayer.card_index_in_hand
+- AIUnoPlayer.enumerate_cards
+- AIUnoPlayer.find_best_move
+- AIUnoPlayer.find_correct_color_card_combination
+- AIUnoPlayer.find_max_colors
+- AIUnoPlayer.play_card
+- AIUnoPlayer.player_type
+
+
+Classes DocString present(+) or missing(-)
+------------------------------------------
+
+- AIUnoPlayer
+
+
+McCabe Complexity Metric for file src/UnoAIPlayerObjects.py
+------------------------------------------------------------
+
+          3    AIUnoPlayer.card_index_in_hand
+          7    AIUnoPlayer.enumerate_cards
+         18    AIUnoPlayer.find_best_move
+          3    AIUnoPlayer.find_correct_color_card_combination
+          9    AIUnoPlayer.find_max_colors
+          4    AIUnoPlayer.play_card
+          1    AIUnoPlayer.player_type
+          1    __main__
+
+
+COCOMO 2's SLOC Metric for src/UnoAIPlayerObjects.py
+-----------------------------------------------------
+
+         98    src/UnoAIPlayerObjects.py
+
+
+*** Processed 1 module in run ***
