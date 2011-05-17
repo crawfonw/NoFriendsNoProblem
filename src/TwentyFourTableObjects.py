@@ -37,48 +37,48 @@ class TwentyFourTable(Table):
                 continue
 
             for i in [0, 1]:
-                print('Player {} has {} cards and {} points.'.format(i, len(self.players[i].hand), self.players[i].points))
+                print(_('Player {} has {} cards and {} points.').format(i, len(self.players[i].hand), self.players[i].points))
 
-            print('Make 24 out of these cards:')
+            print(_('Make 24 out of these cards:'))
             print('   {}'.format(self.trick.cards))
 
-            print('Press any key to buzz in...')
+            print(_('Press any key to buzz in...'))
             start_time = time.time()
 
             while True:
                 if msvcrt.kbhit():
-                    print 'Human player buzzed in!'
+                    print(_('Human player buzzed in!'))
                     self.buzz_in(0)
                     break
                 else:
                     if time.time() - start_time > self.timeout:
-                        print 'Computer player buzzed in!'
+                        print(_('Computer player buzzed in!'))
                         self.buzz_in(1)
                         break
 
             # shouldn't happen with new buzzing system, but just in case...
             if self.buzzed_in != 0 and self.buzzed_in != 1:
-                print('Invalid input.')
+                print(_('Invalid input.'))
                 continue
 
             if self.buzzed_in == 0:
-                print('What is your guess?')
+                print(_('What is your guess?'))
                 guess = raw_input('> ')
 
                 if not self.is_valid_guess(guess):
-                    print('Guess is invalid!')
+                    print(_('Guess is invalid!'))
                     continue
 
                 if not self.is_correct_guess(guess):
-                    print('That doesn\'t make 24!')
+                    print(_('That doesn\'t make 24!'))
                     continue
             elif self.buzzed_in == 1:
-                print 'The computer guessed {}.'.format(self.find_solution())
+                print(_('The computer guessed {}.').format(self.find_solution())
 
-            print('Player {} is correct!'.format(self.buzzed_in))
+            print(_('Player {} is correct!').format(self.buzzed_in))
             self.solve(self.buzzed_in)
             print('')
-        print('Player {} has won!'.format(self.winner()))
+        print(_('Player {} has won!').format(self.winner()))
 
     def play_round(self):
         self.trick.cards.append(self.players[0].hand.pop())
@@ -87,7 +87,7 @@ class TwentyFourTable(Table):
         self.trick.cards.append(self.players[1].hand.pop())
 
     def return_cards(self):
-        print "Couldn't find a solution to current trick. Returning cards to players' hands..."
+        print(_("Couldn't find a solution to current trick. Returning cards to players' hands...")
         self.players[0].hand.insert(0, self.trick.cards[0])
         self.players[0].hand.insert(0, self.trick.cards[1])
         self.players[1].hand.insert(0, self.trick.cards[2])
