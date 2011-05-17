@@ -6,6 +6,7 @@ import compiler
 import itertools
 import msvcrt
 import time
+import gettext
 
 class TimeoutException(Exception):
     pass
@@ -73,9 +74,9 @@ class TwentyFourTable(Table):
                     print(_('That doesn\'t make 24!'))
                     continue
             elif self.buzzed_in == 1:
-                print(_('The computer guessed {}.').format(self.find_solution())
+                print(_('The computer guessed {}.').format(self.find_solution()))
 
-            print(_('Player {} is correct!').format(self.buzzed_in))
+            # print(_('Player {} is correct!').format(self.buzzed_in))
             self.solve(self.buzzed_in)
             print('')
         print(_('Player {} has won!').format(self.winner()))
@@ -87,7 +88,7 @@ class TwentyFourTable(Table):
         self.trick.cards.append(self.players[1].hand.pop())
 
     def return_cards(self):
-        print(_("Couldn't find a solution to current trick. Returning cards to players' hands...")
+        print(_("Couldn't find a solution to current trick. Returning cards to players' hands..."))
         self.players[0].hand.insert(0, self.trick.cards[0])
         self.players[0].hand.insert(0, self.trick.cards[1])
         self.players[1].hand.insert(0, self.trick.cards[2])
@@ -164,3 +165,4 @@ class TwentyFourTable(Table):
 
 if __name__ == '__main__':
     TwentyFourTable().play_game()
+

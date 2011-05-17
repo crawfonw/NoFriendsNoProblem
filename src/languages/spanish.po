@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-17 17:52+Eastern Daylight Time\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: TwentyFourTableObjects.py:40
+msgid "Player {} has {} cards and {} points."
+msgstr "Jugador {} {} tiene tarjetas y puntos de {}."
+
+#: TwentyFourTableObjects.py:42
+msgid "Make 24 out of these cards:"
+msgstr "Hacer 24 de estas tarjetas:"
+
+#: TwentyFourTableObjects.py:45
+msgid "Press any key to buzz in..."
+msgstr "Pulse cualquier tecla para zumbido in ..."
+
+#: TwentyFourTableObjects.py:50
+msgid "Human player buzzed in!"
+msgstr "jugador Humanos zumbaban en!"
+
+#: TwentyFourTableObjects.py:55
+msgid "Computer player buzzed in!"
+msgstr "jugador de equipo zumbaban en!"
+
+#: TwentyFourTableObjects.py:61
+msgid "Invalid input."
+msgstr "Entrada no válida."
+
+#: TwentyFourTableObjects.py:65
+msgid "What is your guess?"
+msgstr "¿Cuál es su respuesta?"
+
+#: TwentyFourTableObjects.py:69
+msgid "Guess is invalid!"
+msgstr "Supongo que no es válida!"
+
+#: TwentyFourTableObjects.py:73
+msgid "That doesn't make 24!"
+msgstr "Eso no tiene 24!"
+
+#: TwentyFourTableObjects.py:76
+msgid "The computer guessed {}."
+msgstr "El equipo adivinado {}."
+
+#: TwentyFourTableObjects.py:78
+msgid "Player {} is correct!"
+msgstr "Jugador {} es correcto!"
+
+#: TwentyFourTableObjects.py:81
+msgid "Player {} has won!"
+msgstr "Jugador {} ha ganado!"
+
+#: TwentyFourTableObjects.py:90
+msgid "Couldn't find a solution to current trick. Returning cards to players' hands..."
+msgstr "No se pudo encontrar una solución para engañar a los actuales. Volviendo a las tarjetas de manos de los jugadores ..."
+
