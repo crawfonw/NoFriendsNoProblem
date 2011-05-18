@@ -5,9 +5,6 @@ from UnoDeckObjects import UnoDeck
 from UnoHumanPlayerObjects import HumanUnoPlayer
 from UnoAIPlayerObjects import AIUnoPlayer
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
-
 class UnoTable(Table):
 
     def __init__(self, player_count = 2):

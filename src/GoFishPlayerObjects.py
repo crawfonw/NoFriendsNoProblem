@@ -29,11 +29,11 @@ class GoFishPlayer(Player):
         four_of_a_kind = self.check_point()
         if four_of_a_kind > 0:
             self.remove_all(four_of_a_kind)
-            print("You get a point!")
+            print _("You get a point!")
             self.score += 1
 
     def print_hand(self):
-        print("Your hand contains:")
+        print _("Your hand contains:")
         for card in self.hand:
             print(card)
 

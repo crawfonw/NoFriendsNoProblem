@@ -2,6 +2,7 @@ import gettext
 
 # make _ accessible to all modules
 import __builtin__
+
 # logic for choosing language
 print 'Choose a language:'
 print '1. English'

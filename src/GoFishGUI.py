@@ -7,9 +7,6 @@ from DeckObjects import Deck
 
 from GoFishTableObjects import GoFishTable
 
-import gettext
-_ = gettext.gettext
-
 class GoFishGUI(PygameHelper):
     
     def __init__(self):

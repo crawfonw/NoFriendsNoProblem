@@ -11,7 +11,7 @@ class GoFishTable(Table):
         self.deck.shuffle()
         self.players.append(GoFishHumanPlayer('Puny Human'))
         for i in range(player_count - 1):
-            self.players.append(GoFishAIPlayer('AI%s' % (i + 1)))
+            self.players.append(GoFishAIPlayer(_('Computer %s') % (i + 1)))
         self.deal(7)
 
         #interacting with GUI
@@ -28,7 +28,7 @@ class GoFishTable(Table):
     def play_turn(self, card_value=None):
         ret = ''
         others = self.players[0:self.current_player] + self.players[self.current_player+1:]
-        print("Player %s:" % self.current_player)
+        print _("Player %s:") % self.current_player
         if self.players[self.current_player].player_type() == 1: #is AI
             ret = self.players[self.current_player].play_round(others, self.deck)
         else: #is Human

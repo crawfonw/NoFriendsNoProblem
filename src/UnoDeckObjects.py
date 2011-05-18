@@ -2,9 +2,6 @@ import random
 from UnoCardObjects import UnoCard
 from DeckObjects import Deck
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
-
 class UnoDeck(Deck):
 
     def __init__(self):

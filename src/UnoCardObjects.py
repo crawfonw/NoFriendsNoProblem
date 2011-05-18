@@ -1,8 +1,5 @@
 from CardObjects import Card
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
-
 class UnoCard(Card):
 
     def __init__(self, value=None, type=None, color=None):

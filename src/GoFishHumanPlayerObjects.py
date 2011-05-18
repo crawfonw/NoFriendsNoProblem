@@ -6,10 +6,10 @@ class GoFishHumanPlayer(GoFishPlayer):
         return 0
 
     def print_hand(self):
-        print("Your hand contains: %s" % self.hand)
+        print _("Your hand contains: %s") % self.hand
 
     def take_card(self, other, index):
-        ret = "You take the %s!" % other.hand[index]
+        ret = _("You take the %s!") % other.hand[index]
         self.hand = self.hand + [other.hand[index]]
         other.hand = other.hand[0:index] + other.hand[index+1:]
         print(ret)
@@ -18,10 +18,10 @@ class GoFishHumanPlayer(GoFishPlayer):
     def draw_from(self, deck):
         try:
             self.hand.insert(0, deck.draw())
-            ret = "You got the %s" % self.hand[0]
+            ret = _("You got the %s") % self.hand[0]
             return ret
         except:
-            ret = "The deck is empty!"
+            ret = _("The deck is empty!")
             print(ret)
             return ret
 
@@ -31,6 +31,6 @@ class GoFishHumanPlayer(GoFishPlayer):
             return self.take_card(others[player_id], index)
         else:
             ret = self.draw_from(deck)
-            newret = "Go Fish! - %s" % ret
+            newret = _("Go Fish! - %s") % ret
             print(newret)
             return newret
