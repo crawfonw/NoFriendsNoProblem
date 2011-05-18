@@ -63,7 +63,7 @@ class TwentyFourTable(Table):
                             self.buzz_in(1)
                             break
             else:
-                rlist, _, _ = select([sys.stdin], [], [], self.timeout)
+                rlist, _a, _b = select([sys.stdin], [], [], self.timeout)
                 if rlist:
                     sys.stdin.readline()
                     print(_('Human player buzzed in!'))
