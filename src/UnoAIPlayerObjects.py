@@ -3,7 +3,7 @@ import random
 from UnoPlayerObjects import UnoPlayer
 
 import gettext
-_ = gettext.gettext
+_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
 
 class AIUnoPlayer(UnoPlayer):
 

@@ -6,25 +6,7 @@ from UnoHumanPlayerObjects import HumanUnoPlayer
 from UnoAIPlayerObjects import AIUnoPlayer
 
 import gettext
-import locale
-#gettext.bindtextdomain('Uno', 'locales')
-#gettext.textdomain('Uno')
-#_ = gettext.gettext
-
-#t = gettext.translation("Uno", 'locales')
-#t = gettext.translation('Uno', 'locales', languages=['sp'])
-#_ = t.ugettext
-#t.install()
-
-current_locale, encoding = locale.getdefaultlocale()
-current_locale = 'sp'
-locale_path = 'locales/'
-language = gettext.translation ('Uno', locale_path, [current_locale] )
-language.install()
-_ = language.ugettext
-
-#t = gettext.translation('Uno', 'locales')
-#_ = t.ugettext
+_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
 
 class UnoTable(Table):
 
@@ -56,7 +38,7 @@ class UnoTable(Table):
                 if move == _('Draw'):
                     print _('{} draws a card...').format(self.players[self.current_player])
                     self.players[self.current_player].draw_from(self.deck)
-                    result = 'draw'
+                    result = _('draw')
                 else:
                     print _('{} plays a {}').format(self.players[self.current_player], move)
                     result = self.players[self.current_player].play_card(move, self.discard)
@@ -66,7 +48,7 @@ class UnoTable(Table):
                 if move.lower().strip() == _('draw'): #draw a card
                     self.players[self.current_player].draw_from(self.deck)
                     print _('You draw a {}').format(self.players[self.current_player].hand[0])
-                    result = 'draw'
+                    result = _('draw')
                 else: #play a card
                     result = self.players[self.current_player].play_card(move, self.discard)
                     if not result:

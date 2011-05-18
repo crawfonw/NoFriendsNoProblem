@@ -3,7 +3,7 @@ from UnoCardObjects import UnoCard
 from DeckObjects import Deck
 
 import gettext
-_ = gettext.gettext
+_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
 
 class UnoDeck(Deck):
 
@@ -12,8 +12,8 @@ class UnoDeck(Deck):
         colors = [_('Blue'), _('Green'), _('Red'), _('Yellow')]
         for value in range(0, 10):
             for color in colors:
-                self.cards.append(UnoCard(value, _('Number'), color))
-                self.cards.append(UnoCard(value, _('Number'), color))
+                self.cards.append(UnoCard(value, 'Number', color))
+                self.cards.append(UnoCard(value, 'Number', color))
 
         types = [_('Draw Two'), _('Reverse'), _('Skip')]
         for color in colors:

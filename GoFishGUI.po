@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+
+domain "GoFishGUI"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-17 13:54+HADT\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: src/GoFishGUI.py:78
+msgid "Scores: "
+msgstr "Puntuaciones: "
+
+#: src/GoFishGUI.py:80
+msgid "%s: %s "
+msgstr "%s: %s "
+
+#: src/GoFishGUI.py:86
+msgid "Selected Opponent: %s"
+msgstr "Seleccionado Oponente: %s"
+
+#: src/GoFishGUI.py:88
+msgid "Selected Opponent: None"
+msgstr "Oponente seleccionados: Ninguno"
+
+#: src/GoFishGUI.py:98
+msgid "Next Turn"
+msgstr "Siguiente giro"
+
+#: src/GoFishGUI.py:101
+msgid "It is %s's turn."
+msgstr "Es el turno de %s."
+
+#: src/GoFishGUI.py:107
+msgid "Deck: %r"
+msgstr "Baraja: %r"
+
+#: src/GoFishGUI.py:114
+msgid "Clubs"
+msgstr "Clubes"
+
+#: src/GoFishGUI.py:116
+msgid "Diamonds"
+msgstr "Diamantes"
+
+#: src/GoFishGUI.py:118
+msgid "Hearts"
+msgstr "Corazones"
+
+#: src/GoFishGUI.py:120
+msgid "Spades"
+msgstr "Picas"
+
+#: src/GoFishGUI.py:144
+msgid "No more cards to draw!"
+msgstr "No hay más cartas para elegir!"
+
+#: src/GoFishGUI.py:149
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: src/GoFishGUI.py:158
+msgid "Choose a player to take a card from!"
+msgstr "Elige a un jugador para tomar una carta de!"
+
+#: src/GoFishGUI.py:189
+msgid "The turn is over! Please press the next button."
+msgstr "El turno ha terminado! Por favor, pulse el botón Siguiente."
+
+#: src/GoFishGUI.py:192
+msgid "%s is the winner with %s matches!"
+msgstr "%s es el ganador con %s partidos!"
+
+#: src/GoFishGUI.py:201
+msgid "You don't have that many opponents!"
+msgstr "No es necesario que muchos oponentes!"
+
+#: src/GoFishGUI.py:205
+msgid "You have selected opponent %s"
+msgstr "Ha seleccionado oponente %s"
+

@@ -1,7 +1,7 @@
 from PlayerObjects import Player
 
 import gettext
-_ = gettext.gettext
+_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
 
 class UnoPlayer(Player): 
 
@@ -12,7 +12,7 @@ class UnoPlayer(Player):
         return card.type == _('Wild') or \
                 top.type == _('Wild') or \
                 card.value == top.value or \
-                card.color == top.color or \
+                card.color == _(top.color) or \
                 (card.type == _('Skip') and top.type == _('Skip')) or \
                 (card.type == _('Reverse') and top.type == _('Reverse')) or \
                 (card.type == _('Draw Two') and top.type == _('Draw Two'))
@@ -23,5 +23,5 @@ class UnoPlayer(Player):
     def print_hand(self):
         s = ''
         for card in self.hand:
-            s += str(card)
+            s += _(str(card))
         print _('Your hand contains:\n{}\n').format(s)
