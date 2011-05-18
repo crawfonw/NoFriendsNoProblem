@@ -1,9 +1,6 @@
 from GoFishPlayerObjects import GoFishPlayer
 from random import randrange
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/GoFishSpanish.mo", "rb")).ugettext
-
 class GoFishAIPlayer(GoFishPlayer):
 
     def player_type(self):

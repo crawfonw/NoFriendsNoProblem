@@ -3,9 +3,6 @@ from GoFishHumanPlayerObjects import GoFishHumanPlayer
 from GoFishAIPlayerObjects import GoFishAIPlayer
 from DeckObjects import Deck
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/GoFishSpanish.mo", "rb")).ugettext
-
 class GoFishTable(Table):
 
     def __init__(self, player_count=2):

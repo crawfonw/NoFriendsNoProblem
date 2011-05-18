@@ -1,8 +1,5 @@
 from PlayerObjects import Player
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/UnoSpanish.mo", "rb")).ugettext
-
 class UnoPlayer(Player): 
 
     def hand_is_empty(self):

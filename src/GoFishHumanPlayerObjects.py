@@ -1,8 +1,5 @@
 from GoFishPlayerObjects import GoFishPlayer
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/GoFishSpanish.mo", "rb")).ugettext
-
 class GoFishHumanPlayer(GoFishPlayer):
 
     def player_type(self):

@@ -19,16 +19,13 @@ msgid "Play a card!"
 msgstr "Jugar una carta!"
 
 #: ERSTableObjects.py:34
+#: ERSTableObjects.py:52
 msgid "Player {} plays the {}!"
 msgstr "Jugador {} {} juega el"
 
 #: ERSTableObjects.py:38
 msgid "Player {} wins!"
 msgstr "Jugador {} gana!"
-
-#: ERSTableObjects.py:52
-msgid "Player {} plays the {}!"
-msgstr "Jugador {} {} juega el"
 
 #: OldMaidTableObjects.py:32
 msgid "Taking a card from the player on your left..."
@@ -101,4 +98,298 @@ msgstr "Jugador {} ha ganado!"
 #: TwentyFourTableObjects.py:90
 msgid "Couldn't find a solution to current trick. Returning cards to players' hands..."
 msgstr "No se pudo encontrar una solución para engañar a los actuales. Volviendo a las tarjetas de manos de los jugadores ..."
+
+#: src/GoFishAIPlayerObjects.py:19
+msgid "%s takes the %s from %s! The turn is over."
+msgstr ""
+
+#: src/GoFishAIPlayerObjects.py:42
+msgid "%s asks if %s has any %s's, but must fish... Their turn is over."
+msgstr ""
+
+#: src/GoFishGUI.py:78
+msgid "Scores: "
+msgstr "Puntuaciones: "
+
+#: src/GoFishGUI.py:80
+msgid "%s: %s "
+msgstr "%s: %s "
+
+#: src/GoFishGUI.py:86
+msgid "Selected Opponent: %s"
+msgstr "Seleccionado Oponente: %s"
+
+#: src/GoFishGUI.py:88
+msgid "Selected Opponent: None"
+msgstr "Oponente seleccionados: Ninguno"
+
+#: src/GoFishGUI.py:98
+msgid "Next Turn"
+msgstr "Siguiente giro"
+
+#: src/GoFishGUI.py:101
+msgid "It is %s's turn."
+msgstr "Es el turno de %s."
+
+#: src/GoFishGUI.py:107
+msgid "Deck: %r"
+msgstr "Baraja: %r"
+
+#: src/GoFishGUI.py:114
+msgid "Clubs"
+msgstr "Clubes"
+
+#: src/GoFishGUI.py:116
+msgid "Diamonds"
+msgstr "Diamantes"
+
+#: src/GoFishGUI.py:118
+msgid "Hearts"
+msgstr "Corazones"
+
+#: src/GoFishGUI.py:120
+msgid "Spades"
+msgstr "Picas"
+
+#: src/GoFishGUI.py:144
+msgid "No more cards to draw!"
+msgstr "No hay más cartas para elegir!"
+
+#: src/GoFishGUI.py:149
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: src/GoFishGUI.py:158
+msgid "Choose a player to take a card from!"
+msgstr "Elige a un jugador para tomar una carta de!"
+
+#: src/GoFishGUI.py:189
+msgid "The turn is over! Please press the next button."
+msgstr "El turno ha terminado! Por favor, pulse el botón Siguiente."
+
+#: src/GoFishGUI.py:192
+msgid "%s is the winner with %s matches!"
+msgstr "%s es el ganador con %s partidos!"
+
+#: src/GoFishGUI.py:201
+msgid "You don't have that many opponents!"
+msgstr "No es necesario que muchos oponentes!"
+
+#: src/GoFishGUI.py:205
+msgid "You have selected opponent %s"
+msgstr "Ha seleccionado oponente %s"
+
+#: src/GoFishHumanPlayerObjects.py:12
+msgid "Your hand contains: %s"
+msgstr ""
+
+#: src/GoFishHumanPlayerObjects.py:15
+msgid "You take the %s!"
+msgstr ""
+
+#: src/GoFishHumanPlayerObjects.py:24
+msgid "You got the %s"
+msgstr ""
+
+#: src/GoFishHumanPlayerObjects.py:27
+msgid "The deck is empty!"
+msgstr ""
+
+#: src/GoFishHumanPlayerObjects.py:37
+msgid "Go Fish! - %s"
+msgstr ""
+
+#: src/GoFishPlayerObjects.py:35
+msgid "You get a point!"
+msgstr ""
+
+#: src/GoFishPlayerObjects.py:39
+msgid "Your hand contains:"
+msgstr ""
+
+#: src/GoFishTableObjects.py:17
+msgid "Computer %s"
+msgstr ""
+
+#: src/GoFishTableObjects.py:34
+msgid "Player %s:"
+msgstr ""
+
+#: src/UnoAIPlayerObjects.py:23
+msgid "That card is not in your hand!"
+msgstr "Esa tarjeta no está en tu mano!"
+
+#: src/UnoAIPlayerObjects.py:29
+msgid "That is not a valid move!"
+msgstr "Eso no es un movimiento válido!"
+
+#: src/UnoAIPlayerObjects.py:34 src/UnoAIPlayerObjects.py:87
+#: src/UnoAIPlayerObjects.py:101 src/UnoAIPlayerObjects.py:113
+#: src/UnoCardObjects.py:10 src/UnoCardObjects.py:32 src/UnoDeckObjects.py:12
+#: src/UnoTableObjects.py:84
+msgid "Blue"
+msgstr "Azul"
+
+#: src/UnoAIPlayerObjects.py:34 src/UnoAIPlayerObjects.py:89
+#: src/UnoAIPlayerObjects.py:103 src/UnoAIPlayerObjects.py:113
+#: src/UnoCardObjects.py:10 src/UnoCardObjects.py:32 src/UnoDeckObjects.py:12
+#: src/UnoTableObjects.py:84
+msgid "Green"
+msgstr "Verde"
+
+#: src/UnoAIPlayerObjects.py:34 src/UnoAIPlayerObjects.py:91
+#: src/UnoAIPlayerObjects.py:105 src/UnoAIPlayerObjects.py:113
+#: src/UnoCardObjects.py:10 src/UnoCardObjects.py:32 src/UnoDeckObjects.py:12
+#: src/UnoTableObjects.py:84
+msgid "Red"
+msgstr "Rojo"
+
+#: src/UnoAIPlayerObjects.py:34 src/UnoAIPlayerObjects.py:93
+#: src/UnoAIPlayerObjects.py:107 src/UnoAIPlayerObjects.py:113
+#: src/UnoCardObjects.py:10 src/UnoCardObjects.py:32 src/UnoDeckObjects.py:12
+#: src/UnoTableObjects.py:84
+msgid "Yellow"
+msgstr "Amarillo"
+
+#: src/UnoAIPlayerObjects.py:38 src/UnoAIPlayerObjects.py:43
+#: src/UnoAIPlayerObjects.py:58 src/UnoAIPlayerObjects.py:64
+#: src/UnoAIPlayerObjects.py:69 src/UnoTableObjects.py:38
+msgid "Draw"
+msgstr "Roba"
+
+#: src/UnoAIPlayerObjects.py:51 src/UnoAIPlayerObjects.py:55
+#: src/UnoAIPlayerObjects.py:56 src/UnoCardObjects.py:11
+#: src/UnoDeckObjects.py:18 src/UnoPlayerObjects.py:16
+#: src/UnoTableObjects.py:71
+msgid "Skip"
+msgstr "Salto"
+
+#: src/UnoAIPlayerObjects.py:53 src/UnoAIPlayerObjects.py:54
+msgid "{} Skip"
+msgstr "{} Salto"
+
+#: src/UnoAIPlayerObjects.py:57 src/UnoAIPlayerObjects.py:61
+#: src/UnoAIPlayerObjects.py:62 src/UnoCardObjects.py:11
+#: src/UnoDeckObjects.py:18 src/UnoPlayerObjects.py:18
+#: src/UnoTableObjects.py:73
+msgid "Draw Two"
+msgstr "Roba Dos"
+
+#: src/UnoAIPlayerObjects.py:59 src/UnoAIPlayerObjects.py:60
+msgid "{} Draw Two"
+msgstr "{} Roba Dos"
+
+#: src/UnoAIPlayerObjects.py:63 src/UnoAIPlayerObjects.py:67
+#: src/UnoAIPlayerObjects.py:68 src/UnoCardObjects.py:11
+#: src/UnoDeckObjects.py:18 src/UnoPlayerObjects.py:17
+#: src/UnoTableObjects.py:77
+msgid "Reverse"
+msgstr "Reverso"
+
+#: src/UnoAIPlayerObjects.py:65 src/UnoAIPlayerObjects.py:66
+msgid "{} Reverse"
+msgstr "{} Reverso"
+
+#: src/UnoAIPlayerObjects.py:69 src/UnoAIPlayerObjects.py:70
+#: src/UnoCardObjects.py:25
+msgid "Wild Card"
+msgstr "Tarjeta Soledado"
+
+#: src/UnoCardObjects.py:10 src/UnoCardObjects.py:22 src/UnoDeckObjects.py:25
+msgid "Black"
+msgstr "Negro"
+
+#: src/UnoCardObjects.py:11 src/UnoCardObjects.py:19 src/UnoDeckObjects.py:15
+#: src/UnoDeckObjects.py:16
+msgid "Number"
+msgstr "Numero"
+
+#: src/UnoCardObjects.py:11 src/UnoCardObjects.py:21 src/UnoCardObjects.py:32
+#: src/UnoDeckObjects.py:25 src/UnoPlayerObjects.py:12
+#: src/UnoPlayerObjects.py:13 src/UnoTableObjects.py:80
+msgid "Wild"
+msgstr "Soledad"
+
+#: src/UnoCardObjects.py:23
+msgid "{} Wild"
+msgstr "{} Soledad"
+
+#: src/UnoPlayerObjects.py:27
+msgid ""
+"Your hand contains:\n"
+"{}\n"
+msgstr "Su mano contiene:\n{}\n"
+
+#: src/UnoTableObjects.py:20
+msgid "Computer {}"
+msgstr "Computadora {}"
+
+#: src/UnoTableObjects.py:35
+msgid ""
+"\n"
+"~~~~~{}'s Turn~~~~~\n"
+msgstr "\n~~~~~Vez de {}~~~~~\n"
+
+#: src/UnoTableObjects.py:39
+msgid "{} draws a card..."
+msgstr "{} saca una carta..."
+
+#: src/UnoTableObjects.py:43
+msgid "{} plays a {}"
+msgstr "{} juega un {}"
+
+#: src/UnoTableObjects.py:48
+msgid "draw"
+msgstr "roba"
+
+#: src/UnoTableObjects.py:50
+msgid "You draw a {}"
+msgstr "Usted roba un {}"
+
+#: src/UnoTableObjects.py:55
+msgid ""
+"That is not a valid card/move!\n"
+msgstr "Eso no es una tarjeta válida/mover!\n"
+
+#: src/UnoTableObjects.py:57
+msgid ""
+"\n"
+"{} plays a {}"
+msgstr "\n{} juega un {}"
+
+#: src/UnoTableObjects.py:60
+msgid "^^^^^ {} says UNO! ^^^^^"
+msgstr "^^^^^ {} dice que ONE! ^^^^^"
+
+#: src/UnoTableObjects.py:62
+msgid "{} wins!"
+msgstr "{} gana!"
+
+#: src/UnoTableObjects.py:83
+msgid ""
+"Please input the color for the wild card.\n"
+msgstr "Por favor introduce el color para la tarjeta soledado.\n"
+
+#: src/UnoTableObjects.py:100
+msgid ""
+"| {} has {} cards in hand.\n"
+msgstr "| {} tiene {} cartas en la mano.\n"
+
+#: src/UnoTableObjects.py:104
+msgid ""
+"+==================================+\n"
+"| Cards in deck: {}"
+msgstr "+==================================+\n| Cartas en el mazo: {}"
+
+#: src/UnoTableObjects.py:105
+msgid ""
+"| Top of the discard pile: {}\n"
+"|"
+msgstr "| Parte superior de la pila de descartes: {}\n|"
+
+#: src/UnoTableObjects.py:108
+msgid ""
+"***Your hand contains***\n"
+"{}\n"
+msgstr "***Su mano tiene***\n{}\n"
 

@@ -7,9 +7,6 @@ from DeckObjects import Deck
 
 from GoFishTableObjects import GoFishTable
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/GoFishSpanish.mo", "rb")).ugettext
-
 class GoFishGUI(PygameHelper):
     
     def __init__(self):

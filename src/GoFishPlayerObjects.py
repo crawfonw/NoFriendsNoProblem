@@ -1,9 +1,6 @@
 from PlayerObjects import Player
 from CardObjects import Card
 
-import gettext
-_ = gettext.GNUTranslations(open("locales/sp/GoFishSpanish.mo", "rb")).ugettext
-
 class GoFishPlayer(Player):
 
     def __init__(self, name = ''):
