@@ -49,9 +49,9 @@ class TwentyFourTable(Table):
             print('   {}'.format(self.trick.cards))
 
             print(_('Press any key to buzz in...'))
-            start_time = time.time()
 
             if os.name == 'nt':
+                start_time = time.time()
                 while True:
                     if msvcrt.kbhit():
                         print(_('Human player buzzed in!'))
