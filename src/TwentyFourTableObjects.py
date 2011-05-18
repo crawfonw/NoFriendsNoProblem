@@ -4,8 +4,14 @@ from TwentyFourDeckObjects import TwentyFourDeck
 from TrickObjects import Trick
 import compiler
 import itertools
-import msvcrt
-import time
+import os
+if os.name == 'nt':
+    import msvcrt
+    import time
+else:
+    import sys
+    from select import select
+
 
 class TimeoutException(Exception):
     pass
@@ -45,16 +51,25 @@ class TwentyFourTable(Table):
             print(_('Press any key to buzz in...'))
             start_time = time.time()
 
-            while True:
-                if msvcrt.kbhit():
-                    print(_('Human player buzzed in!'))
-                    self.buzz_in(0)
-                    break
-                else:
-                    if time.time() - start_time > self.timeout:
-                        print(_('Computer player buzzed in!'))
-                        self.buzz_in(1)
+            if os.name == 'nt':
+                while True:
+                    if msvcrt.kbhit():
+                        print(_('Human player buzzed in!'))
+                        self.buzz_in(0)
                         break
+                    else:
+                        if time.time() - start_time > self.timeout:
+                            print(_('Computer player buzzed in!'))
+                            self.buzz_in(1)
+                            break
+            else:
+                rlist, _, _ = select([sys.stdin], [], [], self.timeout)
+                if rlist:
+                    sys.stdin.readline()
+                    print(_('Human player buzzed in!'))
+                else:
+                    print(_('Computer player buzzed in!'))
+
 
             # shouldn't happen with new buzzing system, but just in case...
             if self.buzzed_in != 0 and self.buzzed_in != 1:
