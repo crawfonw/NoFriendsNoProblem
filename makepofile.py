@@ -1,7 +1,7 @@
 import os
 
 
-MODULE = 'GoFishGUI'
+MODULE = 'GoFish'
 s = ''
 
 for f in os.listdir(os.getcwd() + '/src'):
