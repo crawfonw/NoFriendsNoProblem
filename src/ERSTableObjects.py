@@ -29,13 +29,13 @@ class ERSTable(Table):
                 player = self.war(player)
             else:
                 if player == 0:
-                    input("Play a card!")
+                    input(_("Play a card!"))
                 card = self.players[player].flip()
-                print("Player {} plays the {}!".format(player, card))
+                print(_("Player {} plays the {}!").format(player, card))
                 self.pile.add(card)
             self.wait_for_slap(0.25)
             player = ((player + 1) % len(self.players))
-        print("Player {} wins!".format(self.get_winner()))
+        print(_("Player {} wins!").format(self.get_winner()))
 
     def wait_for_slap(self, t):
         sleep(t)
@@ -49,7 +49,7 @@ class ERSTable(Table):
             num = value - 10
         for i in range(num):
             card = self.players[player].flip()
-            print("Player {} plays the {}!".format(player, card))
+            print(_("Player {} plays the {}!").format(player, card))
             self.pile.add(card)
             value = card.value
             self.wait_for_slap(0.25)

@@ -1,4 +1,3 @@
-
 class Card(object):
     
     def __init__(self, value=None, suit=None, name=None):

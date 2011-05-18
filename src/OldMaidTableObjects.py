@@ -29,12 +29,12 @@ class OldMaidTable(Table):
         while not self.winner():
             if player == 0: #human
                 self.players[0].print_hand()
-                input("Taking a card from the player on your left...")
+                input(_("Taking a card from the player on your left..."))
                 onleft = player - 1
                 while len(self.players[onleft].hand) == 0:
                     onleft -= 1
                 card_taken = self.players[onleft].hand[randrange(len(self.players[onleft].hand))]
-                print("You take the {}".format(card_taken))
+                print(_("You take the {}").format(card_taken))
                 self.players[0].hand.append(card_taken)
                 self.players[onleft].remove_card(card_taken)
             else: #inhuman
@@ -42,14 +42,14 @@ class OldMaidTable(Table):
                     onleft -= 1
                 card_taken = self.players[onleft].hand[randrange(len(self.players[onleft].hand))]
                 if (onleft%len(self.players)) != 0:
-                    print("Player {} takes a card".format(player))
+                    print(_("Player {} takes a card").format(player))
                 else:
-                    print("Player {} takes your {}".format(player, card_taken))
+                    print(_("Player {} takes your {}").format(player, card_taken))
                 self.players[player].hand.append(card_taken)
                 self.players[onleft].remove_card(card_taken)
             self.players[player].update_score()
             player = ((player + 1) % len(self.players))
-        print("Player {} loses!".format(self.get_loser()))
+        print(_("Player {} loses!").format(self.get_loser()))
 
     def winner(self):
         count = 0

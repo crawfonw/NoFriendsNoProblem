@@ -14,6 +14,41 @@ msgstr ""
 "Content-Transfer-Encoding: ENCODING\n"
 "Generated-By: pygettext.py 1.5\n"
 
+#: ERSTableObjects.py:32
+msgid "Play a card!"
+msgstr "Jugar una carta!"
+
+#: ERSTableObjects.py:34
+msgid "Player {} plays the {}!"
+msgstr "Jugador {} {} juega el"
+
+#: ERSTableObjects.py:38
+msgid "Player {} wins!"
+msgstr "Jugador {} gana!"
+
+#: ERSTableObjects.py:52
+msgid "Player {} plays the {}!"
+msgstr "Jugador {} {} juega el"
+
+#: OldMaidTableObjects.py:32
+msgid "Taking a card from the player on your left..."
+msgstr "Teniendo una tarjeta del jugador a su izquierda ..."
+
+#: OldMaidTableObjects.py:37
+msgid "You take the {}"
+msgstr "Usted toma el {}"
+
+#: OldMaidTableObjects.py:45
+msgid "Player {} takes a card"
+msgstr "Jugador {} tiene una tarjeta"
+
+#: OldMaidTableObjects.py:47
+msgid "Player {} takes your {}"
+msgstr "Jugador {} {} tiene su"
+
+#: OldMaidTableObjects.py:52
+msgid "Player {} loses!"
+msgstr "Jugador {} pierde!"
 
 #: TwentyFourTableObjects.py:40
 msgid "Player {} has {} cards and {} points."
