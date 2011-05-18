@@ -134,7 +134,7 @@ msgstr "Oponente seleccionados: Ninguno"
 
 #: src/GoFishGUI.py:98
 msgid "Next Turn"
-msgstr "Siguiente giro"
+msgstr "Siguiente"
 
 #: src/GoFishGUI.py:101
 msgid "It is %s's turn."
