@@ -13,7 +13,7 @@ class Card(object):
 
     def __str__(self):
         if self.value != 0:
-            return "%s of %s" % (self.name, self.suit)
+            return _("%s of %s") % (self.name, self.suit)
         else:
             return self.name
 

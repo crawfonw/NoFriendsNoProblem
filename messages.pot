@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2011-05-18 10:39+HADT\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: src/OldMaidPlayerObjects.py:47
+msgid "Discard!"
+msgstr ""
+
+#: src/OldMaidPlayerObjects.py:51
+msgid "Your hand contains:"
+msgstr ""
+
+#: src/OldMaidTableObjects.py:32
+msgid "Taking a card from the player on your left..."
+msgstr ""
+
+#: src/OldMaidTableObjects.py:37
+msgid "You take the {}"
+msgstr ""
+
+#: src/OldMaidTableObjects.py:45
+msgid "Player {} takes a card"
+msgstr ""
+
+#: src/OldMaidTableObjects.py:47
+msgid "Player {} takes your {}"
+msgstr ""
+
+#: src/OldMaidTableObjects.py:52
+msgid "Player {} loses!"
+msgstr ""
+

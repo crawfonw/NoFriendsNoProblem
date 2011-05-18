@@ -27,6 +27,15 @@ msgstr "Jugador {} {} juega el"
 msgid "Player {} wins!"
 msgstr "Jugador {} gana!"
 
+#: src/OldMaidPlayerObjects.py:47
+msgid "Discard!"
+msgstr "Descarta!"
+
+#: src/OldMaidPlayerObjects.py:51
+#: src/GoFishPlayerObjects.py:39
+msgid "Your hand contains:"
+msgstr "Su mano contiene:"
+
 #: OldMaidTableObjects.py:32
 msgid "Taking a card from the player on your left..."
 msgstr "Teniendo una tarjeta del jugador a su izquierda ..."
@@ -101,11 +110,11 @@ msgstr "No se pudo encontrar una solución para engañar a los actuales. Volvien
 
 #: src/GoFishAIPlayerObjects.py:19
 msgid "%s takes the %s from %s! The turn is over."
-msgstr ""
+msgstr "%s toma el %s de %s! Su cambio es finito."
 
 #: src/GoFishAIPlayerObjects.py:42
 msgid "%s asks if %s has any %s's, but must fish... Their turn is over."
-msgstr ""
+msgstr "%s pide si %s tiene %s, pero tiene que pescar. Su cambio es finito."
 
 #: src/GoFishGUI.py:78
 msgid "Scores: "
@@ -154,6 +163,10 @@ msgstr "Corazones"
 #: src/DeckObjects.py:8
 msgid "Spades"
 msgstr "Picas"
+
+#: src/CardObjects.py:16
+msgid "%s of %s"
+msgstr "%s de %s"
 
 #: src/CardObjects.py:34
 msgid "Joker"
@@ -230,10 +243,6 @@ msgstr "Ido de pesca - %s"
 #: src/GoFishPlayerObjects.py:35
 msgid "You get a point!"
 msgstr "Recibi un punto!"
-
-#: src/GoFishPlayerObjects.py:39
-msgid "Your hand contains:"
-msgstr "Su mano contiene:"
 
 #: src/GoFishTableObjects.py:17
 msgid "Computer %s"

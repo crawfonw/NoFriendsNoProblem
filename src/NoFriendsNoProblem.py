@@ -18,7 +18,7 @@ elif choice == '2':
 # "game launcher" logic here
 print 'Choose a game:'
 print '1. DrawCardDemo'
-print '2. ESR'
+print '2. ERS'
 print '3. Go Fish'
 print '4. Old Maid'
 print '5. 24'
