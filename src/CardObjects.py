@@ -23,15 +23,15 @@ class Card(object):
         if 1 < self.value <= 10:
             return str(self.value)
         elif self.value == 1:
-            return "Ace"
+            return _("Ace")
         elif self.value == 11:
-            return "Jack"
+            return _("Jack")
         elif self.value == 12:
-            return "Queen"
+            return _("Queen")
         elif self.value == 13:
-            return "King"
+            return _("King")
         elif self.value == 0:
-            return "Joker"
+            return _("Joker")
         else:
             raise ValueError
 

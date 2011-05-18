@@ -29,7 +29,7 @@ class ERSTable(Table):
                 player = self.war(player)
             else:
                 if player == 0:
-                    input(_("Play a card!"))
+                    raw_input(_("Play a card!"))
                 card = self.players[player].flip()
                 print(_("Player {} plays the {}!").format(player, card))
                 self.pile.add(card)

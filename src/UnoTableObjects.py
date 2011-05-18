@@ -41,7 +41,7 @@ class UnoTable(Table):
                     result = self.players[self.current_player].play_card(move, self.discard)
             else: #is Human
                 self.print_output_for_human()
-                move = raw_input('Please input your move, or draw:\n')
+                move = raw_input(_('Please input your move, or draw:\n'))
                 if move.lower().strip() == _('draw'): #draw a card
                     self.players[self.current_player].draw_from(self.deck)
                     print _('You draw a {}').format(self.players[self.current_player].hand[0])
