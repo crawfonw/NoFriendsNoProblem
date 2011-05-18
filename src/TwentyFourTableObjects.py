@@ -6,7 +6,6 @@ import compiler
 import itertools
 import msvcrt
 import time
-import gettext
 
 class TimeoutException(Exception):
     pass
