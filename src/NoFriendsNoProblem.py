@@ -17,30 +17,26 @@ elif choice == '2':
 
 # "game launcher" logic here
 print 'Choose a game:'
-print '1. DrawCardDemo'
-print '2. ERS'
-print '3. Go Fish'
-print '4. Old Maid'
-print '5. 24'
-print '6. UNO'
+print '1. ERS'
+print '2. Go Fish'
+print '3. Old Maid'
+print '4. 24'
+print '5. UNO'
 
 choice = raw_input('> ')
 
 if choice == '1':
-    from DrawCardDemo import DrawDemo
-    DrawDemo()
-elif choice == '2':
     from ERSTableObjects import ERSTable
     ERSTable().play_game()
-elif choice == '3':
+elif choice == '2':
     from GoFishGUI import GoFishGUI
     GoFishGUI()
-elif choice == '4':
+elif choice == '3':
     from OldMaidTableObjects import OldMaidTable
     OldMaidTable().play_game()
-elif choice == '5':
+elif choice == '4':
     from TwentyFourTableObjects import TwentyFourTable
     TwentyFourTable().play_game()
-elif choice == '6':
+elif choice == '5':
     from UnoTableObjects import UnoTable
     UnoTable().play_game()
