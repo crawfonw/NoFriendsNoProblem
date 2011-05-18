@@ -5,12 +5,12 @@ class Deck(object):
 
     def __init__(self, jokers=False):
         self.cards = []
-        suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
+        suits = [_("Clubs"), _("Diamonds"), _("Hearts"), _("Spades")]
         for value in range(1, 14):
             for suit in suits:
                 self.cards.append(Card(value, suit))
         if jokers:
-            self.cards.append(Card(0, "Jokers"))
+            self.cards.append(Card(0, _("Jokers")))
 
     def shuffle(self):
         random.shuffle(self.cards)

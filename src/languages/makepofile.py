@@ -1,7 +1,7 @@
 import os
 
 
-MODULE = 'OldMaid'
+MODULE = ''
 s = ''
 
 for f in os.listdir(os.getcwd() + '/src'):

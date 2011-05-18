@@ -44,10 +44,10 @@ class OldMaidPlayer(Player):
         two_of_a_kind = self.check_discard()
         while two_of_a_kind > 0:
             self.remove_two(two_of_a_kind)
-            print("Discard!")
+            print _("Discard!")
             two_of_a_kind = self.check_discard()
 
     def print_hand(self):
-        print("Your hand contains:")
+        print _("Your hand contains:")
         for card in self.hand:
             print(card)

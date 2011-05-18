@@ -29,7 +29,7 @@ class OldMaidTable(Table):
         while not self.winner():
             if player == 0: #human
                 self.players[0].print_hand()
-                input(_("Taking a card from the player on your left..."))
+                raw_input(_("Taking a card from the player on your left..."))
                 onleft = player - 1
                 while len(self.players[onleft].hand) == 0:
                     onleft -= 1

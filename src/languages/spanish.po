@@ -27,6 +27,15 @@ msgstr "Jugador {} {} juega el"
 msgid "Player {} wins!"
 msgstr "Jugador {} gana!"
 
+#: src/OldMaidPlayerObjects.py:47
+msgid "Discard!"
+msgstr "Descarta!"
+
+#: src/OldMaidPlayerObjects.py:51
+#: src/GoFishPlayerObjects.py:39
+msgid "Your hand contains:"
+msgstr "Su mano contiene:"
+
 #: OldMaidTableObjects.py:32
 msgid "Taking a card from the player on your left..."
 msgstr "Teniendo una tarjeta del jugador a su izquierda ..."
@@ -101,11 +110,11 @@ msgstr "No se pudo encontrar una solución para engañar a los actuales. Volvien
 
 #: src/GoFishAIPlayerObjects.py:19
 msgid "%s takes the %s from %s! The turn is over."
-msgstr ""
+msgstr "%s toma el %s de %s! Su cambio es finito."
 
 #: src/GoFishAIPlayerObjects.py:42
 msgid "%s asks if %s has any %s's, but must fish... Their turn is over."
-msgstr ""
+msgstr "%s pide si %s tiene %s, pero tiene que pescar. Su cambio es finito."
 
 #: src/GoFishGUI.py:78
 msgid "Scores: "
@@ -136,20 +145,52 @@ msgid "Deck: %r"
 msgstr "Baraja: %r"
 
 #: src/GoFishGUI.py:114
+#: src/DeckObjects.py:8
 msgid "Clubs"
 msgstr "Clubes"
 
 #: src/GoFishGUI.py:116
+#: src/DeckObjects.py:8
 msgid "Diamonds"
 msgstr "Diamantes"
 
 #: src/GoFishGUI.py:118
+#: src/DeckObjects.py:8
 msgid "Hearts"
 msgstr "Corazones"
 
 #: src/GoFishGUI.py:120
+#: src/DeckObjects.py:8
 msgid "Spades"
 msgstr "Picas"
+
+#: src/CardObjects.py:16
+msgid "%s of %s"
+msgstr "%s de %s"
+
+#: src/CardObjects.py:34
+msgid "Joker"
+msgstr "Bromista"
+
+#: src/CardObjects.py:26
+msgid "Ace"
+msgstr "As"
+
+#: src/CardObjects.py:28
+msgid "Jack"
+msgstr "Jota"
+
+#: src/CardObjects.py:30
+msgid "Queen"
+msgstr "Reina"
+
+#: src/CardObjects.py:32
+msgid "King"
+msgstr "Rey"
+
+#: src/DeckObjects.py:13
+msgid "Jokers"
+msgstr "Bromistas"
 
 #: src/GoFishGUI.py:144
 msgid "No more cards to draw!"
@@ -181,39 +222,35 @@ msgstr "Ha seleccionado oponente %s"
 
 #: src/GoFishHumanPlayerObjects.py:12
 msgid "Your hand contains: %s"
-msgstr ""
+msgstr "Su mano contiene: %s"
 
 #: src/GoFishHumanPlayerObjects.py:15
 msgid "You take the %s!"
-msgstr ""
+msgstr "Toma %s"
 
 #: src/GoFishHumanPlayerObjects.py:24
 msgid "You got the %s"
-msgstr ""
+msgstr "Recibi %s"
 
 #: src/GoFishHumanPlayerObjects.py:27
 msgid "The deck is empty!"
-msgstr ""
+msgstr "El mazo de cartas esta vacia!"
 
 #: src/GoFishHumanPlayerObjects.py:37
 msgid "Go Fish! - %s"
-msgstr ""
+msgstr "Ido de pesca - %s"
 
 #: src/GoFishPlayerObjects.py:35
 msgid "You get a point!"
-msgstr ""
-
-#: src/GoFishPlayerObjects.py:39
-msgid "Your hand contains:"
-msgstr ""
+msgstr "Recibi un punto!"
 
 #: src/GoFishTableObjects.py:17
 msgid "Computer %s"
-msgstr ""
+msgstr "Computadora %s"
 
 #: src/GoFishTableObjects.py:34
 msgid "Player %s:"
-msgstr ""
+msgstr "Jugador %s:"
 
 #: src/UnoAIPlayerObjects.py:23
 msgid "That card is not in your hand!"
@@ -337,6 +374,10 @@ msgstr "{} saca una carta..."
 #: src/UnoTableObjects.py:43
 msgid "{} plays a {}"
 msgstr "{} juega un {}"
+
+#: src/UnoTableObjects.py:44
+msgid "Please input your move, or draw:\n"
+msgstr "Escribi su mova o roba por favor:\n"
 
 #: src/UnoTableObjects.py:48
 msgid "draw"
